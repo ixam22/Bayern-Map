@@ -3,42 +3,46 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Bayern – Drilldown (fix + CSV)</title>
+<title>Bayern – Drilldown (PNG fix + „tiefer“ im GM-Fokus)</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <style>
-  :root{ --bg:#f4f6f8; --panel:#fff; --text:#111827; --muted:#6b7280;
-         --primary:#1f77b4; --border:#e5e7eb; --hover:#edf0f3; }
-  html,body{height:100%;margin:0;background:var(--bg);color:var(--text);
-            font:14px system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+  :root{ --bg:#f4f6f8; --panel:#fff; --text:#111827; --muted:#6b7280; --border:#e5e7eb; --hover:#edf0f3; --on:#e9efff; }
+  html,body{height:100%;margin:0;background:var(--bg);color:var(--text);font:14px system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
   #map{height:100%}
 
   .panel{ position:absolute; left:12px; top:12px; z-index:1000; background:var(--panel);
-          border:1px solid var(--border); border-radius:14px; padding:12px; min-width:300px;
+          border:1px solid var(--border); border-radius:14px; padding:12px; min-width:320px;
           box-shadow:0 10px 30px rgba(0,0,0,.08); }
   .panel h3{margin:0 0 8px; font-size:18px}
   .row{display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-top:6px}
-  .btn{appearance:none; border:1px solid var(--border); background:#fff; color:var(--text);
+  .btn{appearance:none; border:1px solid var(--border); background:#fff; color:#111;
        padding:8px 12px; border-radius:12px; cursor:pointer; box-shadow:0 1px 2px rgba(0,0,0,.04);
        transition:background .15s, border-color .15s}
   .btn:hover{background:var(--hover)}
-  .btn-primary{border-color:var(--primary); color:var(--primary)}
-  .select{border:1px solid var(--border); background:#fff; color:var(--text);
-          border-radius:12px; padding:8px 12px}
-  small.muted{color:var(--muted)}
+  .btn:focus, .btn:focus-visible{ outline:none; box-shadow:none; border-color:var(--border); }
+
   .switch{display:inline-flex; align-items:center; gap:8px; cursor:pointer}
-  .sw{ width:38px; height:22px; border-radius:999px; position:relative;
-       background:#e5e7eb; transition:background .15s; border:1px solid var(--border); }
+  .sw{ width:38px; height:22px; border-radius:999px; position:relative; background:#e5e7eb;
+       transition:background .15s; border:1px solid var(--border); }
   .sw::after{ content:""; position:absolute; top:2px; left:2px; width:18px; height:18px;
-              background:#fff; border-radius:50%; box-shadow:0 1px 2px rgba(0,0,0,.15);
-              transition:left .15s; }
+              background:#fff; border-radius:50%; box-shadow:0 1px 2px rgba(0,0,0,.15); transition:left .15s; }
   .sw.on{background:#dbeafe; border-color:#93c5fd} .sw.on::after{left:18px}
 
-  .lbl{ background:transparent; border:none; box-shadow:none; padding:0;
-        font:600 12px/1.1 system-ui; color:#1d1d1f;
+  .tiles{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; width:100%; margin-top:8px}
+  .tile{ border:1px solid var(--border); border-radius:12px; padding:10px 12px; text-align:center; cursor:pointer;
+         user-select:none; transition:background .15s, border-color .15s, transform .02s ease-in }
+  .tile.kRB::before{content:"RB"; font-weight:700; margin-right:6px}
+  .tile.kKR::before{content:"KR"; font-weight:700; margin-right:6px}
+  .tile.kGM::before{content:"GM"; font-weight:700; margin-right:6px}
+  .tile:hover{background:var(--hover)} .tile.on{background:var(--on); border-color:#93c5fd; color:#154a86}
+  .tile:active{transform:scale(0.99)}
+
+  small.muted{color:var(--muted)}
+  .lbl{ background:transparent; border:none; box-shadow:none; padding:0; font:600 12px/1.1 system-ui; color:#1d1d1f;
         text-shadow:0 0 3px #fff, 0 0 6px #fff; pointer-events:none; }
 
-  .leaflet-tooltip.tt{ background:#fff; color:#111; border:1px solid var(--border);
-    border-radius:10px; padding:8px 10px; box-shadow:0 8px 20px rgba(0,0,0,.12); font-size:12px }
+  .leaflet-tooltip.tt{ background:#fff; color:#111; border:1px solid var(--border); border-radius:10px; padding:8px 10px;
+                        box-shadow:0 8px 20px rgba(0,0,0,.12); font-size:12px }
   .tt h4{margin:0 0 2px; font-size:13px} .tt .muted{color:#6b7280}
 
   .pp{min-width:240px}
@@ -54,10 +58,11 @@
 <div id="map"></div>
 
 <div class="panel">
-  <h3>Ebene: <span id="lvlTxt">Bundesland</span></h3>
+  <h3>Fokus: <span id="lvlTxt">Bundesland</span></h3>
   <div class="row">
     <button id="upBtn" class="btn" type="button">⟵ höher</button>
     <button id="resetBtn" class="btn" type="button">↻ Reset</button>
+    <button id="pngBtn" class="btn" type="button">🖼️ PNG</button>
     <button id="missingBtn" class="btn" type="button">Fehlende IDs (CSV)</button>
   </div>
 
@@ -68,60 +73,89 @@
     </label>
   </div>
 
-  <div class="row" style="margin-top:10px">
-    <select id="quickSel" class="select">
-      <option value="">Schnellansicht …</option>
-      <option value="rb">Alle Regierungsbezirke</option>
-      <option value="kr">Alle Kreise</option>
-      <option value="gm">Alle Gemeinden</option>
-    </select>
-    <button id="quickGo" class="btn" type="button">Anzeigen</button>
+  <div class="row" style="margin-top:8px; width:100%">
+    <small class="muted">Max. 1 Art gleichzeitig (Klick = wählen, nochmal klicken = Auto-Modus):</small>
+    <div class="tiles" id="tiles">
+      <div class="tile kRB" data-kind="rb" title="Regierungsbezirke">Regierungsbezirke</div>
+      <div class="tile kKR" data-kind="kr" title="Kreise">Kreise</div>
+      <div class="tile kGM" data-kind="gm" title="Gemeinden">Gemeinden</div>
+    </div>
   </div>
-  <div class="row"><small class="muted">„Anzeigen“ rendert die gewählte Ebene bayernweit.</small></div>
+  <div class="row"><small class="muted">Auto-Modus zeigt passend zur Ebene (BL/RB/KR/GM).</small></div>
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/topojson-client@3"></script>
 <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+<!-- WICHTIG: nach Leaflet laden -->
+<script src="https://unpkg.com/leaflet-image/leaflet-image.js"></script>
 
 <script>
-const map = L.map('map', { preferCanvas:true, zoomControl:false }).setView([48.95,11.5],7);
+// --- Map: SVG-Renderer (kompatibel mit leaflet-image) ---
+const map = L.map('map', { zoomControl:false }).setView([48.95,11.5],7);
+const svgRenderer = L.svg({ padding:0.5 });
 L.control.zoom({ position:'topright' }).addTo(map);
 
+// Styles
 const styleBase   ={ color:'#1f77b4', weight:1.4, fillColor:'#ffffff', fillOpacity:0.92 };
 const styleHover  ={ color:'#1f77b4', weight:1.8, fillColor:'#edf0f3', fillOpacity:0.95 };
 const styleSelect ={ color:'#1f5aa8', weight:2.2, fillColor:'#e9efff', fillOpacity:0.95 };
 
+// Texte
 const ART_BL='(Bundesland)', ART_RB='(Regierungsbezirk)', ART_KR='(Kreis / kreisfreie Stadt)', ART_GM='(Gemeinde)';
 
+// UI refs
 const lvlTxt   = document.getElementById('lvlTxt');
 const upBtn    = document.getElementById('upBtn');
 const resetBtn = document.getElementById('resetBtn');
-const quickSel = document.getElementById('quickSel');
-const quickGo  = document.getElementById('quickGo');
 const sw       = document.getElementById('sw');
+const labelToggle = document.getElementById('labelToggle');
 const missingBtn = document.getElementById('missingBtn');
+const pngBtn   = document.getElementById('pngBtn');
+const tilesEl  = document.getElementById('tiles');
 
+// Data + helpers
 let ATTR = new Map();
 const labelOf = id => ATTR.get(id)?.name || id;
-
-const keyBL=id=>id.slice(0,2), keyRB=id=>id.slice(0,3), keyKR=id=>id.slice(0,5), keyGM=id=>id.slice(0,8);
+const keyBL=id=>id.slice(0,2), keyRB=id=>id.slice(0,3), keyKR=id=>id.slice(0,5);
 const GK_MAP = {"1":"0 - 2.999","2":"3.000 - 4.999","3":"5.000 - 9.999","4":"10.000 - 19.999","5":"Ab 20.000"};
 const KK_MAP = {"K":"Kommune","M":"Markt","St":"Stadt","GKSt":"Große Kreisstadt"};
 
 let fullGeo, layer=null, labels=L.layerGroup().addTo(map);
-let level='bl', selBL='09', selRB=null, selKR=null;
+let focus='bl', selRB=null, selKR=null;
 let showLabels=false;
 let selectedLayer = null;
-let currentFeats=null, currentIdGetter=null;
 
-function setLevel(l){ level=l; lvlTxt.textContent = l==='bl'?'Bundesland':l==='rb'?'Regierungsbezirke':l==='kr'?'Kreise':'Gemeinden'; }
+// Kachelwahl
+let manualSelectedKind = null; // 'rb'|'kr'|'gm'|null
+
+// Gemeinde-Einzelansicht
+let gmSingleId = null;
+
+// Label-Relayout
+let lastFeats = [];
+let relayoutPending = false;
+const labelPtCache = new Map();
+function scheduleRelayout(){
+  if (!showLabels) return;
+  if (relayoutPending) return;
+  relayoutPending = true;
+  requestAnimationFrame(()=>{ relayoutPending=false; labelFeatures(lastFeats); });
+}
+map.on('moveend zoomend', scheduleRelayout);
+
+// Focus-Title
+function updateFocusTitle(){
+  let t = (focus==='bl' ? 'Deutschland' : focus==='rb' ? 'Bundesland' : focus==='kr' ? 'Regierungsbezirk' : 'Landkreis');
+  if (focus==='gm' && gmSingleId) t = 'Gemeinde';
+  lvlTxt.textContent = t;
+}
+const setFocus = f=>{ focus=f; updateFocusTitle(); };
+
 function clearLayers(){
   if (layer) map.removeLayer(layer);
   labels.clearLayers();
   if (selectedLayer){ selectedLayer.setStyle(styleBase); selectedLayer=null; }
-  currentFeats = null;
-  currentIdGetter = null;
 }
 
 function isGemeinde(id, art){ return (String(id).length===8) || /gemeinde/i.test(art||''); }
@@ -140,30 +174,47 @@ function tooltipHTML(id){
 }
 function popupHTML(id){
   const a = ATTR.get(id)||{};
+  const idLen = String(id).length;
+  const isGmFocus = (focus==='gm');
+  const inSingle  = (isGmFocus && gmSingleId!==null);
+
+  // BL->RB, RB->KR, KR->GM; zusätzlich: im GM-Fokus für GM (8-stellig) "tiefer" sichtbar, wenn NICHT Einzelansicht
+  const canDownBase = (idLen===2 || idLen===3 || idLen===5);
+  const showDown = isGmFocus
+      ? (!inSingle && idLen===8) || canDownBase   // im GM-Fokus: GM klickbar nach unten in Einzelansicht
+      : canDownBase;
+
+  const showUp = (focus!=='bl'); // überall außer BL
+
   return `<div class="pp">
       <h4>${a.name||id}</h4>
       <div class="muted">${a.art||''}</div>
       ${infoRows(id)}
       <div class="actions">
-        ${ level==='gm' ? '' : `<button class="btn" type="button" data-cmd="down" data-id="${id}">↙︎ tiefer</button>` }
-        ${ level==='bl' ? '' : `<button class="btn" type="button" data-cmd="up"   data-id="${id}">↖︎ höher</button>` }
+        ${ showUp ? `<button class="btn" type="button" data-cmd="up" data-id="${id}">↖︎ höher</button>` : '' }
+        ${ showDown ? `<button class="btn" type="button" data-cmd="down" data-id="${id}">↙︎ tiefer</button>` : '' }
       </div>
     </div>`;
 }
 
 function estimateLabelSize(text){ const w=Math.max(22, text.length*7+10); return {w,h:14}; }
-function rectsOverlap(a,b){ return !(a.x2<b.x1 || a.x1>b.x2 || a.y2<b.y1 || a.y1>b.y2); }
+function rectsOverlap(a,b){ return !(a.x2<b.x1 || a.x1>b.x2 || a.y1>b.y2 || a.y2<b.y1); }
 function labelPoint(feature){
-  try{ const p=turf.polylabel(feature,1.5); return [p.geometry.coordinates[1],p.geometry.coordinates[0]]; }catch(e){}
-  try{ const p=turf.pointOnFeature(feature); return [p.geometry.coordinates[1],p.geometry.coordinates[0]]; }catch(e){}
-  return L.geoJSON(feature).getBounds().getCenter();
+  const id = feature.properties?.id;
+  if (id && labelPtCache.has(id)) return labelPtCache.get(id);
+  let ll;
+  try{ const p=turf.polylabel(feature,1.5); ll=[p.geometry.coordinates[1],p.geometry.coordinates[0]]; }
+  catch(e){ try{ const p=turf.pointOnFeature(feature); ll=[p.geometry.coordinates[1],p.geometry.coordinates[0]]; }
+  catch(_){ const c=L.geoJSON(feature).getBounds().getCenter(); ll=[c.lat,c.lng]; } }
+  if (id) labelPtCache.set(id, ll);
+  return ll;
 }
-function labelFeatures(feats, idGetter){
-  labels.clearLayers(); if (!showLabels) return;
-  const placed=[]; const passes=[34,28,20,12];
 
+function labelFeatures(feats){
+  labels.clearLayers(); if (!showLabels || !feats || feats.length===0) return;
+  const placed=[]; const passes=[34,28,20,12];
   for (const f of feats){
-    const id=idGetter(f), name=labelOf(id), ll0=labelPoint(f), {w,h}=estimateLabelSize(name);
+    const id=f.properties.id, name=labelOf(id), ll0=labelPoint(f), {w,h}=estimateLabelSize(name);
     let ok=false;
     for (const pad of passes){
       const base=map.latLngToLayerPoint(L.latLng(ll0[0], ll0[1]));
@@ -177,68 +228,52 @@ function labelFeatures(feats, idGetter){
       }
       if (ok) break;
     }
-    if (!ok){
-      labels.addLayer(L.marker([ll0[0], ll0[1]], {icon:L.divIcon({className:'lbl',html:name,iconSize:[0,0]})}));
-    }
+    if (!ok){ labels.addLayer(L.marker([ll0[0], ll0[1]], {icon:L.divIcon({className:'lbl',html:name,iconSize:[0,0]})})); }
   }
-  currentFeats=feats; currentIdGetter=idGetter;
-}
-function relayoutLabels(){ if (!showLabels || !currentFeats || !currentIdGetter) return; labelFeatures(currentFeats, currentIdGetter); }
-map.on('zoomend moveend', relayoutLabels);
-
-// ---------- Navigation (stabil) ----------
-function goUpFrom(id){
-  const s=String(id);
-  if (s.length>=8){ selKR=s.slice(0,5); setLevel('kr'); renderKR(); }
-  else if (s.length>=5){ selRB=s.slice(0,3); setLevel('rb'); renderRB(); }
-  else if (s.length>=3){ setLevel('bl'); renderBL(); }
-}
-function goDownFrom(id){
-  const s=String(id);
-  if (s.length===2){ setLevel('rb'); renderRB(); }
-  else if (s.length===3){ selRB=s; setLevel('kr'); renderKR(); }
-  else if (s.length===5){ selKR=s; setLevel('gm'); renderGM(); }
-}
-function goHigher(idOpt){
-  const id = idOpt || (selectedLayer?.feature?.properties?.id ?? null);
-  if (id) return goUpFrom(id);
-  if (level==='gm'){ setLevel('kr'); renderKR(); }
-  else if (level==='kr'){ setLevel('rb'); renderRB(); }
-  else if (level==='rb'){ setLevel('bl'); renderBL(); }
-}
-function goLower(idOpt){
-  const id = idOpt || (selectedLayer?.feature?.properties?.id ?? null);
-  if (id) return goDownFrom(id);
-  if (level==='bl'){ setLevel('rb'); renderRB(); }
-  else if (level==='rb' && selRB){ setLevel('kr'); renderKR(); }
-  else if (level==='kr' && selKR){ setLevel('gm'); renderGM(); }
 }
 
-// ---------- Zeichnen ----------
-function drawFeatures(feats, bind){
+function drawFeatures(feats){
   layer = L.geoJSON({ type:'FeatureCollection', features:feats }, {
+    renderer: svgRenderer,
     style: styleBase,
     onEachFeature:(f,l)=>{
       l.on('mouseover', ()=>{ if (l!==selectedLayer) l.setStyle(styleHover); });
       l.on('mouseout',  ()=>{ if (l!==selectedLayer) l.setStyle(styleBase); });
-      if (bind){
-        l.bindTooltip(()=>tooltipHTML(f.properties.id), {sticky:true, direction:'auto', opacity:0.95, className:'tt'});
-        l.on('click', ()=>{
-          const id=f.properties.id;
-          if (id.length===3) selRB=id;
-          if (id.length===5) selKR=id;
+      l.bindTooltip(()=>tooltipHTML(f.properties.id), {sticky:true, direction:'auto', opacity:0.95, className:'tt'});
+      l.on('click', ()=>{
+        const id=f.properties.id;
+        if (id.length===3) selRB=id;
+        if (id.length===5) selKR=id;
+
+        // Im GM-Fokus: Klick auf Gemeinde öffnet Popup; „tiefer“ im Popup schaltet in Einzelansicht
+        if (focus==='gm' && id.length===8){
           if (selectedLayer && selectedLayer!==l) selectedLayer.setStyle(styleBase);
           selectedLayer=l; l.setStyle(styleSelect);
           l.bindPopup(popupHTML(id), {maxWidth:300}).openPopup();
-        });
-      }
+          return;
+        }
+
+        if (selectedLayer && selectedLayer!==l) selectedLayer.setStyle(styleBase);
+        selectedLayer=l; l.setStyle(styleSelect);
+        l.bindPopup(popupHTML(id), {maxWidth:300}).openPopup();
+      });
     }
   }).addTo(map);
 
-  if (feats.length) map.fitBounds(layer.getBounds(), { padding:[20,20] });
+  if (feats.length){
+    if (focus==='bl'){
+      const by = fullGeo.features.find(f=>f.properties.id==='09');
+      if (by){
+        const bounds = L.geoJSON(by, {renderer: svgRenderer}).getBounds();
+        map.fitBounds(bounds, { padding:[20,20] });
+        return;
+      }
+    }
+    map.fitBounds(layer.getBounds(), { padding:[20,20] });
+  }
 }
 
-// **Event-Delegation**: fängt Klicks auf allen Popup-Buttons stabil ab
+// Popup-Buttons
 document.addEventListener('click', (ev)=>{
   const btn = ev.target.closest('button[data-cmd]');
   if (!btn) return;
@@ -249,60 +284,123 @@ document.addEventListener('click', (ev)=>{
   if (cmd==='down') goLower(id);
   map.closePopup();
 });
+map.on('popupclose', ()=>{ if (selectedLayer){ selectedLayer.setStyle(styleBase); selectedLayer=null; }});
 
-map.on('popupclose', ()=>{
-  if (selectedLayer){ selectedLayer.setStyle(styleBase); selectedLayer=null; }
-});
-
-// Filter
-const featsBL = () => fullGeo.features.filter(f => (f.properties?.art===ART_BL) || (f.properties?.id?.length===2));
-const featsRB = () => fullGeo.features.filter(f => (f.properties?.art===ART_RB)||(f.properties?.id?.length===3))
-                                      .filter(f => f.properties.id.startsWith(selBL));
-const featsKR = () => fullGeo.features.filter(f => (f.properties?.art===ART_KR)||(f.properties?.id?.length===5))
-                                      .filter(f => f.properties.id.startsWith(selRB));
-const featsGM = () => fullGeo.features.filter(f => (f.properties?.art===ART_GM)||(f.properties?.id?.length===8))
-                                      .filter(f => f.properties.id.startsWith(selKR));
-const allRB = () => fullGeo.features.filter(f => (f.properties?.art===ART_RB)||(f.properties?.id?.length===3)).filter(f => keyBL(f.properties.id)==='09');
-const allKR = () => fullGeo.features.filter(f => (f.properties?.art===ART_KR)||(f.properties?.id?.length===5)).filter(f => keyBL(f.properties.id)==='09');
-const allGM = () => fullGeo.features.filter(f => (f.properties?.art===ART_GM)||(f.properties?.id?.length===8)).filter(f => keyBL(f.properties.id)==='09');
-
-// Render-Ebenen
-function renderBL(){
-  clearLayers();
-  const feats=featsBL(); const onlyBY = feats.find(f=>f.properties.id==='09') || feats[0];
-  drawFeatures([onlyBY], true);
-  if (showLabels){
-    const c=layer.getBounds().getCenter();
-    labels.addLayer(L.marker(c,{icon:L.divIcon({className:'lbl',html:labelOf('09'),iconSize:[0,0]})}));
-    currentFeats=null;
+// ---------- Navigation ----------
+function goUpFrom(id){
+  // In GM-Einzelansicht: „höher“ verlässt nur die Einzelansicht (bleibt Fokus=GM)
+  if (focus==='gm' && gmSingleId){
+    gmSingleId = null;
+    updateFocusTitle();
+    render();
+    return;
   }
+  const s=String(id);
+  if (s.length>=8){ selKR = s.slice(0,5); selRB = s.slice(0,3); setFocus('kr'); }
+  else if (s.length>=5){ selRB = s.slice(0,3); setFocus('rb'); }
+  else if (s.length>=3){ setFocus('bl'); }
+  render();
 }
-function renderRB(){ clearLayers(); const feats=featsRB(); drawFeatures(feats,true); labelFeatures(feats, f=>f.properties.id); }
-function renderKR(){ clearLayers(); const feats=featsKR(); drawFeatures(feats,true); labelFeatures(feats, f=>f.properties.id); }
-function renderGM(){ clearLayers(); const feats=featsGM(); drawFeatures(feats,true); labelFeatures(feats, f=>f.properties.id); }
-function renderQuick(kind){
+function goDownFrom(id){
+  const s=String(id);
+  if (s.length===2){ setFocus('rb'); }
+  else if (s.length===3){ selRB=s; setFocus('kr'); }
+  else if (s.length===5){ selKR=s; setFocus('gm'); gmSingleId=null; } // GM-Liste im Kreis
+  else if (s.length===8 && focus==='gm'){ gmSingleId = s; updateFocusTitle(); } // Einzelansicht aktivieren
+  render();
+}
+function goHigher(idOpt){
+  if (focus==='gm' && gmSingleId){ gmSingleId=null; updateFocusTitle(); render(); return; }
+  const id = idOpt || (selectedLayer?.feature?.properties?.id ?? null);
+  if (id) return goUpFrom(id);
+  if (focus==='gm'){ setFocus('kr'); }
+  else if (focus==='kr'){ setFocus('rb'); }
+  else if (focus==='rb'){ setFocus('bl'); }
+  render();
+}
+function goLower(idOpt){
+  const id = idOpt || (selectedLayer?.feature?.properties?.id ?? null);
+  if (id) return goDownFrom(id);
+  if (focus==='bl'){ setFocus('rb'); }
+  else if (focus==='rb' && selRB){ setFocus('kr'); }
+  else if (focus==='kr' && selKR){ setFocus('gm'); gmSingleId=null; }
+  render();
+}
+
+// ---------- Feature-Sammler ----------
+const featsOf = {
+  rb: () => fullGeo.features.filter(f => (f.properties?.art===ART_RB)||(f.properties?.id?.length===3))
+                            .filter(f => keyBL(f.properties.id)==='09'),
+  kr: () => fullGeo.features.filter(f => (f.properties?.art===ART_KR)||(f.properties?.id?.length===5)),
+  gm: () => fullGeo.features.filter(f => (f.properties?.art===ART_GM)||(f.properties?.id?.length===8)),
+  bl: () => fullGeo.features.filter(f => (f.properties?.art===ART_BL)||(f.properties?.id?.length===2))
+                            .filter(f => f.properties.id==='09'),
+};
+
+function restrictByFocus(feats){
+  if (focus==='bl'){ return feats.filter(f => keyBL(f.properties.id)==='09'); }
+  if (focus==='rb'){ return feats.filter(f => keyBL(f.properties.id)==='09'); }                 // alle RB
+  if (focus==='kr'){ if (!selRB) return feats.filter(f => keyBL(f.properties.id)==='09');        // Fallback
+                     return feats.filter(f => f.properties.id.startsWith(selRB)); }              // alle KR im RB
+  if (focus==='gm'){
+    if (gmSingleId){ return feats.filter(f => f.properties.id===gmSingleId); }                  // Einzelansicht
+    if (!selKR) return [];                                                                       // GM-Liste im Kreis
+    return feats.filter(f => f.properties.id.startsWith(selKR));
+  }
+  return feats;
+}
+
+// Auto vs. manuell
+function getAutoFeatures(){
+  if (focus==='bl') return featsOf.bl();
+  if (focus==='rb') return featsOf.rb();
+  if (focus==='kr') return restrictByFocus(featsOf.kr());
+  if (focus==='gm') return restrictByFocus(featsOf.gm());
+  return [];
+}
+function getManualFeatures(){
+  if (!manualSelectedKind) return [];
+  const pool = featsOf[manualSelectedKind] ? featsOf[manualSelectedKind]() : [];
+  return restrictByFocus(pool);
+}
+
+function render(fit=true){
   clearLayers();
-  if (kind==='rb'){ const feats=allRB(); drawFeatures(feats,true); labelFeatures(feats, f=>f.properties.id); setLevel('rb'); return; }
-  if (kind==='kr'){ const feats=allKR(); drawFeatures(feats,true); labelFeatures(feats, f=>f.properties.id); setLevel('kr'); return; }
-  if (kind==='gm'){ const feats=allGM(); drawFeatures(feats,true); labelFeatures(feats, f=>f.properties.id); setLevel('gm'); return; }
+  const feats = manualSelectedKind ? getManualFeatures() : getAutoFeatures();
+  lastFeats = feats;
+  drawFeatures(feats);
+  labelFeatures(feats);
+  if (!fit) return;
 }
 
-// UI
+// ---------- UI ----------
 upBtn.addEventListener('click', ()=>goHigher());
-resetBtn.addEventListener('click', ()=>{ selRB=null; selKR=null; setLevel('bl'); renderBL(); });
-document.getElementById('labelToggle').addEventListener('click', ()=>{
-  showLabels=!showLabels; sw.classList.toggle('on', showLabels);
-  if (level==='bl') renderBL(); else if (level==='rb') renderRB(); else if (level==='kr') renderKR(); else renderGM();
+resetBtn.addEventListener('click', ()=>{
+  selRB=null; selKR=null; gmSingleId=null;
+  setFocus('bl'); manualSelectedKind = null;
+  tilesEl.querySelectorAll('.tile').forEach(t=>t.classList.remove('on'));
+  render();
 });
-quickGo.addEventListener('click', ()=>{ const v=quickSel.value; if (v) renderQuick(v); });
+labelToggle.addEventListener('click', ()=>{
+  showLabels=!showLabels; sw.classList.toggle('on', showLabels);
+  if (showLabels){ labelFeatures(lastFeats); } else { labels.clearLayers(); }
+});
+tilesEl.addEventListener('click', (e)=>{
+  const tile = e.target.closest('.tile'); if (!tile) return;
+  const kind = tile.dataset.kind;
+  const isActive = tile.classList.contains('on');
+  tilesEl.querySelectorAll('.tile').forEach(t=>t.classList.remove('on'));
+  manualSelectedKind = isActive ? null : kind;
+  if (!isActive) tile.classList.add('on');
+  render();
+});
 
-// CSV: fehlende IDs (ohne Eintrag in attributes.json)
+// CSV fehlende IDs
 missingBtn.addEventListener('click', ()=>{
   if (!fullGeo){ alert('Daten noch nicht geladen.'); return; }
   const missing = [];
   for (const f of fullGeo.features){
-    const id = f.properties?.id;
-    if (!id) continue;
+    const id = f.properties?.id; if (!id) continue;
     if (!ATTR.has(id)) missing.push(id);
   }
   const rows = ['id'].concat(missing).join('\n');
@@ -314,6 +412,8 @@ missingBtn.addEventListener('click', ()=>{
   URL.revokeObjectURL(url);
 });
 
+
+
 // Laden
 Promise.all([
   fetch('data/bayern_id_art.json').then(r=>r.json()),
@@ -322,8 +422,191 @@ Promise.all([
   for (const [id,obj] of Object.entries(attrs)) ATTR.set(id, obj);
   const objName = Object.keys(topo.objects)[0];
   fullGeo = topojson.feature(topo, topo.objects[objName]);
-  setLevel('bl'); renderBL();
+  setFocus('bl');
+  render();
 }).catch(err=>{ console.error(err); alert('Fehler beim Laden der Daten.'); });
+
+
+
+// --- PNG-Export: kompletter Layer (auch Offscreen), MultiPolygon-fest, capped Size + skalierte Labels ---
+function exportPNG(){
+  try{
+    if (!fullGeo){ alert('Daten noch nicht geladen.'); return; }
+
+    // 1) Bounds des aktuell GEZEICHNETEN Layers (umfasst auch Offscreen-Teile)
+    let bounds = null;
+    if (layer && typeof layer.getBounds === 'function' && layer.getLayers().length){
+      bounds = layer.getBounds();
+    } else {
+      const by = fullGeo.features.find(f=>f.properties.id==='09');
+      if (!by){ alert('Keine Geometrie gefunden.'); return; }
+      bounds = L.geoJSON(by).getBounds();
+    }
+
+    // 2) Crop-Rechteck in Container-(CSS)-Pixeln + Padding (OHNE Clamping)
+    const pad = 24;
+    const size = map.getSize(); // nur zur Info
+    const pNW  = map.latLngToContainerPoint(bounds.getNorthWest());
+    const pSE  = map.latLngToContainerPoint(bounds.getSouthEast());
+
+    const minX = Math.min(pNW.x, pSE.x) - pad;
+    const minY = Math.min(pNW.y, pSE.y) - pad;
+    const maxX = Math.max(pNW.x, pSE.x) + pad;
+    const maxY = Math.max(pNW.y, pSE.y) + pad;
+
+    const cropW_css = Math.max(1, Math.round(maxX - minX)); // CSS-Pixel
+    const cropH_css = Math.max(1, Math.round(maxY - minY));
+
+    // 3) Device-Pixel + harte Obergrenze + globale Skala
+    const dpr = window.devicePixelRatio || 1;
+    const MAX_DIM = 8000; // maximale Kantenlänge in Device-Pixeln (sicher für gängige Browser)
+    const outW_dev = cropW_css * dpr;
+    const outH_dev = cropH_css * dpr;
+    const scale    = Math.min(1, MAX_DIM / outW_dev, MAX_DIM / outH_dev); // <= 1
+
+    const out = document.createElement('canvas');
+    out.width  = Math.max(1, Math.floor(outW_dev * scale));
+    out.height = Math.max(1, Math.floor(outH_dev * scale));
+    const ctx  = out.getContext('2d', { alpha:true });
+
+    // --- OPTIONAL: Weißer Hintergrund statt Transparenz ---
+    // ctx.save(); ctx.fillStyle = '#fff'; ctx.fillRect(0,0,out.width,out.height); ctx.restore();
+
+    // Hilfsfunktionen (alle Koordinaten direkt in Ziel-Device-Pixel skaliert)
+    function toCanvasPoint(latlng){
+      const p = map.latLngToContainerPoint(latlng); // CSS px
+      return {
+        x: (p.x - minX) * dpr * scale,
+        y: (p.y - minY) * dpr * scale
+      };
+    }
+
+    function normalizeToMultiPolygon(latlngs){
+      // Ziel: Array<PolygonRings>, PolygonRings = Array<Ring>, Ring = Array<LatLng>
+      if (Array.isArray(latlngs) && Array.isArray(latlngs[0]) && Array.isArray(latlngs[0][0])) {
+        return latlngs; // MultiPolygon
+      } else if (Array.isArray(latlngs) && Array.isArray(latlngs[0])) {
+        return [ latlngs ]; // Polygon -> MultiPolygon(1)
+      } else {
+        return [ [ latlngs ] ]; // Ring -> Polygon -> MultiPolygon
+      }
+    }
+
+    function pathFromRings(ctx, rings){
+      ctx.beginPath();
+      for (const ring of rings){
+        if (!ring || !ring.length) continue;
+        for (let i=0;i<ring.length;i++){
+          const {x,y} = toCanvasPoint(ring[i]);
+          if (i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+        }
+        ctx.closePath();
+      }
+    }
+
+    // 4) Geometrie rendern (MultiPolygon + Löcher via evenodd)
+    const defStroke = '#1f77b4', defFill = '#ffffff', defW = 1.4;
+
+    const layers = layer && layer.getLayers ? layer.getLayers() : [];
+    if (!layers.length){ alert('Keine sichtbaren Features im aktuellen Fokus.'); return; }
+
+    for (const l of layers){
+      if (typeof l.getLatLngs !== 'function') continue;
+
+      const mpoly  = normalizeToMultiPolygon(l.getLatLngs());
+      const opt    = l.options || {};
+      const stroke = opt.color ?? defStroke;
+      const fill   = (opt.fillColor ?? opt.color) ?? defFill;
+      const lineW  = ((opt.weight != null ? opt.weight : defW) * dpr * scale);
+      const fillOp = (opt.fillOpacity != null ? opt.fillOpacity : 0.92);
+      const lineOp = (opt.opacity != null ? opt.opacity : 1);
+
+      for (const rings of mpoly){
+        // Füllen
+        ctx.save();
+        ctx.globalAlpha = fillOp;
+        ctx.fillStyle   = fill;
+        pathFromRings(ctx, rings);
+        ctx.fill('evenodd');
+        ctx.restore();
+
+        // Umriss
+        ctx.save();
+        ctx.globalAlpha = lineOp;
+        ctx.lineWidth   = Math.max(0.5, lineW);
+        ctx.strokeStyle = stroke;
+        pathFromRings(ctx, rings);
+        ctx.stroke();
+        ctx.restore();
+      }
+    }
+
+    // 5) Labels (Outline statt Glow, skaliert)
+    function drawTextOutlined(text, x, y, px){
+      const lw = 3 * dpr * scale;
+      const half = Math.max(1, Math.round(lw/2));
+
+      ctx.save();
+      ctx.textBaseline = 'middle';
+      ctx.textAlign    = 'center';
+      ctx.font         = `600 ${px}px system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial`;
+      ctx.lineJoin     = 'round';
+      ctx.lineCap      = 'round';
+      ctx.miterLimit   = 2;
+
+      ctx.lineWidth   = lw;
+      ctx.strokeStyle = '#ffffff';
+      ctx.strokeText(text, x, y);
+      ctx.strokeText(text, x + half*0.1, y + half*0.1);
+
+      ctx.fillStyle = '#1d1d1f';
+      ctx.fillText(text, x, y);
+      ctx.restore();
+    }
+
+    if (typeof showLabels === 'undefined' || showLabels){
+      labels.eachLayer(function(m){
+        if (!m || typeof m.getLatLng !== 'function') return;
+        const cp = toCanvasPoint(m.getLatLng());
+        let txt = '';
+        try{
+          const html = m.options?.icon?.options?.html ?? '';
+          txt = String(html).replace(/<[^>]*>/g,'').trim();
+        }catch(_){}
+        if (!txt){
+          try{ txt = (m.getElement()?.innerText || '').trim(); }catch(_){}
+        }
+        if (!txt) return;
+
+        drawTextOutlined(txt, cp.x, cp.y, 12 * dpr * scale);
+      });
+    }
+
+    // 6) Download
+    out.toBlob(function(b){
+      if (!b){ alert('PNG konnte nicht erstellt werden.'); return; }
+      const dl = URL.createObjectURL(b);
+      const a  = document.createElement('a');
+      a.href = dl;
+      a.download = 'bayern_drilldown.png';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(dl);
+    }, 'image/png');
+
+  }catch(e){
+    console.error('PNG-Export Fehler:', e);
+    alert('PNG-Export: Unerwarteter Fehler.');
+  }
+}
+
+// Button koppeln (falls nicht schon geschehen)
+pngBtn.addEventListener('click', exportPNG);
+
+
+
+
 </script>
 </body>
 </html>
