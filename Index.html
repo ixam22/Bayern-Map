@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bayern – Drilldown (fix + CSV)</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+  :root{ --bg:#f4f6f8; --panel:#fff; --text:#111827; --muted:#6b7280;
+         --primary:#1f77b4; --border:#e5e7eb; --hover:#edf0f3; }
+  html,body{height:100%;margin:0;background:var(--bg);color:var(--text);
+            font:14px system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+  #map{height:100%}
+
+  .panel{ position:absolute; left:12px; top:12px; z-index:1000; background:var(--panel);
+          border:1px solid var(--border); border-radius:14px; padding:12px; min-width:300px;
+          box-shadow:0 10px 30px rgba(0,0,0,.08); }
+  .panel h3{margin:0 0 8px; font-size:18px}
+  .row{display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-top:6px}
+  .btn{appearance:none; border:1px solid var(--border); background:#fff; color:var(--text);
+       padding:8px 12px; border-radius:12px; cursor:pointer; box-shadow:0 1px 2px rgba(0,0,0,.04);
+       transition:background .15s, border-color .15s}
+  .btn:hover{background:var(--hover)}
+  .btn-primary{border-color:var(--primary); color:var(--primary)}
+  .select{border:1px solid var(--border); background:#fff; color:var(--text);
+          border-radius:12px; padding:8px 12px}
+  small.muted{color:var(--muted)}
+  .switch{display:inline-flex; align-items:center; gap:8px; cursor:pointer}
+  .sw{ width:38px; height:22px; border-radius:999px; position:relative;
+       background:#e5e7eb; transition:background .15s; border:1px solid var(--border); }
+  .sw::after{ content:""; position:absolute; top:2px; left:2px; width:18px; height:18px;
+              background:#fff; border-radius:50%; box-shadow:0 1px 2px rgba(0,0,0,.15);
+              transition:left .15s; }
+  .sw.on{background:#dbeafe; border-color:#93c5fd} .sw.on::after{left:18px}
+
+  .lbl{ background:transparent; border:none; box-shadow:none; padding:0;
+        font:600 12px/1.1 system-ui; color:#1d1d1f;
+        text-shadow:0 0 3px #fff, 0 0 6px #fff; pointer-events:none; }
+
+  .leaflet-tooltip.tt{ background:#fff; color:#111; border:1px solid var(--border);
+    border-radius:10px; padding:8px 10px; box-shadow:0 8px 20px rgba(0,0,0,.12); font-size:12px }
+  .tt h4{margin:0 0 2px; font-size:13px} .tt .muted{color:#6b7280}
+
+  .pp{min-width:240px}
+  .pp h4{margin:0 0 4px; font-size:14px}
+  .pp .muted{color:#6b7280; font-size:12px}
+  .pp .kv{margin:6px 0; font-size:12px}
+  .pp .kv span{display:inline-block; min-width:120px; color:#6b7280}
+  .pp .actions{display:flex; gap:8px; margin-top:8px}
+  .pp .actions .btn{padding:6px 10px; border-radius:10px}
+</style>
+</head>
+<body>
+<div id="map"></div>
+
+<div class="panel">
+  <h3>Ebene: <span id="lvlTxt">Bundesland</span></h3>
+  <div class="row">
+    <button id="upBtn" class="btn" type="button">⟵ höher</button>
+    <button id="resetBtn" class="btn" type="button">↻ Reset</button>
+    <button id="missingBtn" class="btn" type="button">Fehlende IDs (CSV)</button>
+  </div>
+
+  <div class="row" style="margin-top:6px">
+    <label class="switch" id="labelToggle">
+      <span>Labels anzeigen</span>
+      <span class="sw" id="sw"></span>
+    </label>
+  </div>
+
+  <div class="row" style="margin-top:10px">
+    <select id="quickSel" class="select">
+      <option value="">Schnellansicht …</option>
+      <option value="rb">Alle Regierungsbezirke</option>
+      <option value="kr">Alle Kreise</option>
+      <option value="gm">Alle Gemeinden</option>
+    </select>
+    <button id="quickGo" class="btn" type="button">Anzeigen</button>
+  </div>
+  <div class="row"><small class="muted">„Anzeigen“ rendert die gewählte Ebene bayernweit.</small></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/topojson-client@3"></script>
+<script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+
+<script>
+const map = L.map('map', { preferCanvas:true, zoomControl:false }).setView([48.95,11.5],7);
+L.control.zoom({ position:'topright' }).addTo(map);
+
+const styleBase   ={ color:'#1f77b4', weight:1.4, fillColor:'#ffffff', fillOpacity:0.92 };
+const styleHover  ={ color:'#1f77b4', weight:1.8, fillColor:'#edf0f3', fillOpacity:0.95 };
+const styleSelect ={ color:'#1f5aa8', weight:2.2, fillColor:'#e9efff', fillOpacity:0.95 };
+
+const ART_BL='(Bundesland)', ART_RB='(Regierungsbezirk)', ART_KR='(Kreis / kreisfreie Stadt)', ART_GM='(Gemeinde)';
+
+const lvlTxt   = document.getElementById('lvlTxt');
+const upBtn    = document.getElementById('upBtn');
+const resetBtn = document.getElementById('resetBtn');
+const quickSel = document.getElementById('quickSel');
+const quickGo  = document.getElementById('quickGo');
+const sw       = document.getElementById('sw');
+const missingBtn = document.getElementById('missingBtn');
+
+let ATTR = new Map();
+const labelOf = id => ATTR.get(id)?.name || id;
+
+const keyBL=id=>id.slice(0,2), keyRB=id=>id.slice(0,3), keyKR=id=>id.slice(0,5), keyGM=id=>id.slice(0,8);
+const GK_MAP = {"1":"0 - 2.999","2":"3.000 - 4.999","3":"5.000 - 9.999","4":"10.000 - 19.999","5":"Ab 20.000"};
+const KK_MAP = {"K":"Kommune","M":"Markt","St":"Stadt","GKSt":"Große Kreisstadt"};
+
+let fullGeo, layer=null, labels=L.layerGroup().addTo(map);
+let level='bl', selBL='09', selRB=null, selKR=null;
+let showLabels=false;
+let selectedLayer = null;
+let currentFeats=null, currentIdGetter=null;
+
+function setLevel(l){ level=l; lvlTxt.textContent = l==='bl'?'Bundesland':l==='rb'?'Regierungsbezirke':l==='kr'?'Kreise':'Gemeinden'; }
+function clearLayers(){
+  if (layer) map.removeLayer(layer);
+  labels.clearLayers();
+  if (selectedLayer){ selectedLayer.setStyle(styleBase); selectedLayer=null; }
+  currentFeats = null;
+  currentIdGetter = null;
+}
+
+function isGemeinde(id, art){ return (String(id).length===8) || /gemeinde/i.test(art||''); }
+function infoRows(id){
+  const a = ATTR.get(id)||{}; const gm = isGemeinde(id, a.art);
+  const gk = gm && a.gk ? (GK_MAP[String(a.gk)]||a.gk) : null;
+  const kk = gm && a.kk ? (KK_MAP[String(a.kk)]||a.kk) : null;
+  let html = `<div class="kv"><span>ID:</span> ${id}</div>`;
+  if (gk) html += `<div class="kv"><span>Größenklasse:</span> ${gk}</div>`;
+  if (kk) html += `<div class="kv"><span>Kommunenklasse:</span> ${kk}</div>`;
+  return html;
+}
+function tooltipHTML(id){
+  const a = ATTR.get(id)||{};
+  return `<div class="pp"><h4>${a.name||id}</h4><div class="muted">${a.art||''}</div>${infoRows(id)}</div>`;
+}
+function popupHTML(id){
+  const a = ATTR.get(id)||{};
+  return `<div class="pp">
+      <h4>${a.name||id}</h4>
+      <div class="muted">${a.art||''}</div>
+      ${infoRows(id)}
+      <div class="actions">
+        ${ level==='gm' ? '' : `<button class="btn" type="button" data-cmd="down" data-id="${id}">↙︎ tiefer</button>` }
+        ${ level==='bl' ? '' : `<button class="btn" type="button" data-cmd="up"   data-id="${id}">↖︎ höher</button>` }
+      </div>
+    </div>`;
+}
+
+function estimateLabelSize(text){ const w=Math.max(22, text.length*7+10); return {w,h:14}; }
+function rectsOverlap(a,b){ return !(a.x2<b.x1 || a.x1>b.x2 || a.y2<b.y1 || a.y1>b.y2); }
+function labelPoint(feature){
+  try{ const p=turf.polylabel(feature,1.5); return [p.geometry.coordinates[1],p.geometry.coordinates[0]]; }catch(e){}
+  try{ const p=turf.pointOnFeature(feature); return [p.geometry.coordinates[1],p.geometry.coordinates[0]]; }catch(e){}
+  return L.geoJSON(feature).getBounds().getCenter();
+}
+function labelFeatures(feats, idGetter){
+  labels.clearLayers(); if (!showLabels) return;
+  const placed=[]; const passes=[34,28,20,12];
+
+  for (const f of feats){
+    const id=idGetter(f), name=labelOf(id), ll0=labelPoint(f), {w,h}=estimateLabelSize(name);
+    let ok=false;
+    for (const pad of passes){
+      const base=map.latLngToLayerPoint(L.latLng(ll0[0], ll0[1]));
+      const offsets=[[0,0],[0,pad],[0,-pad],[pad,0],[-pad,0],[pad,pad],[-pad,-pad]];
+      for (const [ox,oy] of offsets){
+        const p=L.point(base.x+ox, base.y+oy);
+        const latlng=map.layerPointToLatLng(p);
+        const rect={x1:p.x-w/2,y1:p.y-h/2,x2:p.x+w/2,y2:p.y+h/2};
+        let clash=false; for (const r of placed){ if (rectsOverlap(rect,r)){clash=true;break;} }
+        if (!clash){ placed.push(rect); labels.addLayer(L.marker(latlng,{icon:L.divIcon({className:'lbl',html:name,iconSize:[0,0]})})); ok=true; break; }
+      }
+      if (ok) break;
+    }
+    if (!ok){
+      labels.addLayer(L.marker([ll0[0], ll0[1]], {icon:L.divIcon({className:'lbl',html:name,iconSize:[0,0]})}));
+    }
+  }
+  currentFeats=feats; currentIdGetter=idGetter;
+}
+function relayoutLabels(){ if (!showLabels || !currentFeats || !currentIdGetter) return; labelFeatures(currentFeats, currentIdGetter); }
+map.on('zoomend moveend', relayoutLabels);
+
+// ---------- Navigation (stabil) ----------
+function goUpFrom(id){
+  const s=String(id);
+  if (s.length>=8){ selKR=s.slice(0,5); setLevel('kr'); renderKR(); }
+  else if (s.length>=5){ selRB=s.slice(0,3); setLevel('rb'); renderRB(); }
+  else if (s.length>=3){ setLevel('bl'); renderBL(); }
+}
+function goDownFrom(id){
+  const s=String(id);
+  if (s.length===2){ setLevel('rb'); renderRB(); }
+  else if (s.length===3){ selRB=s; setLevel('kr'); renderKR(); }
+  else if (s.length===5){ selKR=s; setLevel('gm'); renderGM(); }
+}
+function goHigher(idOpt){
+  const id = idOpt || (selectedLayer?.feature?.properties?.id ?? null);
+  if (id) return goUpFrom(id);
+  if (level==='gm'){ setLevel('kr'); renderKR(); }
+  else if (level==='kr'){ setLevel('rb'); renderRB(); }
+  else if (level==='rb'){ setLevel('bl'); renderBL(); }
+}
+function goLower(idOpt){
+  const id = idOpt || (selectedLayer?.feature?.properties?.id ?? null);
+  if (id) return goDownFrom(id);
+  if (level==='bl'){ setLevel('rb'); renderRB(); }
+  else if (level==='rb' && selRB){ setLevel('kr'); renderKR(); }
+  else if (level==='kr' && selKR){ setLevel('gm'); renderGM(); }
+}
+
+// ---------- Zeichnen ----------
+function drawFeatures(feats, bind){
+  layer = L.geoJSON({ type:'FeatureCollection', features:feats }, {
+    style: styleBase,
+    onEachFeature:(f,l)=>{
+      l.on('mouseover', ()=>{ if (l!==selectedLayer) l.setStyle(styleHover); });
+      l.on('mouseout',  ()=>{ if (l!==selectedLayer) l.setStyle(styleBase); });
+      if (bind){
+        l.bindTooltip(()=>tooltipHTML(f.properties.id), {sticky:true, direction:'auto', opacity:0.95, className:'tt'});
+        l.on('click', ()=>{
+          const id=f.properties.id;
+          if (id.length===3) selRB=id;
+          if (id.length===5) selKR=id;
+          if (selectedLayer && selectedLayer!==l) selectedLayer.setStyle(styleBase);
+          selectedLayer=l; l.setStyle(styleSelect);
+          l.bindPopup(popupHTML(id), {maxWidth:300}).openPopup();
+        });
+      }
+    }
+  }).addTo(map);
+
+  if (feats.length) map.fitBounds(layer.getBounds(), { padding:[20,20] });
+}
+
+// **Event-Delegation**: fängt Klicks auf allen Popup-Buttons stabil ab
+document.addEventListener('click', (ev)=>{
+  const btn = ev.target.closest('button[data-cmd]');
+  if (!btn) return;
+  ev.preventDefault();
+  const cmd = btn.dataset.cmd;
+  const id  = btn.dataset.id || null;
+  if (cmd==='up')   goHigher(id);
+  if (cmd==='down') goLower(id);
+  map.closePopup();
+});
+
+map.on('popupclose', ()=>{
+  if (selectedLayer){ selectedLayer.setStyle(styleBase); selectedLayer=null; }
+});
+
+// Filter
+const featsBL = () => fullGeo.features.filter(f => (f.properties?.art===ART_BL) || (f.properties?.id?.length===2));
+const featsRB = () => fullGeo.features.filter(f => (f.properties?.art===ART_RB)||(f.properties?.id?.length===3))
+                                      .filter(f => f.properties.id.startsWith(selBL));
+const featsKR = () => fullGeo.features.filter(f => (f.properties?.art===ART_KR)||(f.properties?.id?.length===5))
+                                      .filter(f => f.properties.id.startsWith(selRB));
+const featsGM = () => fullGeo.features.filter(f => (f.properties?.art===ART_GM)||(f.properties?.id?.length===8))
+                                      .filter(f => f.properties.id.startsWith(selKR));
+const allRB = () => fullGeo.features.filter(f => (f.properties?.art===ART_RB)||(f.properties?.id?.length===3)).filter(f => keyBL(f.properties.id)==='09');
+const allKR = () => fullGeo.features.filter(f => (f.properties?.art===ART_KR)||(f.properties?.id?.length===5)).filter(f => keyBL(f.properties.id)==='09');
+const allGM = () => fullGeo.features.filter(f => (f.properties?.art===ART_GM)||(f.properties?.id?.length===8)).filter(f => keyBL(f.properties.id)==='09');
+
+// Render-Ebenen
+function renderBL(){
+  clearLayers();
+  const feats=featsBL(); const onlyBY = feats.find(f=>f.properties.id==='09') || feats[0];
+  drawFeatures([onlyBY], true);
+  if (showLabels){
+    const c=layer.getBounds().getCenter();
+    labels.addLayer(L.marker(c,{icon:L.divIcon({className:'lbl',html:labelOf('09'),iconSize:[0,0]})}));
+    currentFeats=null;
+  }
+}
+function renderRB(){ clearLayers(); const feats=featsRB(); drawFeatures(feats,true); labelFeatures(feats, f=>f.properties.id); }
+function renderKR(){ clearLayers(); const feats=featsKR(); drawFeatures(feats,true); labelFeatures(feats, f=>f.properties.id); }
+function renderGM(){ clearLayers(); const feats=featsGM(); drawFeatures(feats,true); labelFeatures(feats, f=>f.properties.id); }
+function renderQuick(kind){
+  clearLayers();
+  if (kind==='rb'){ const feats=allRB(); drawFeatures(feats,true); labelFeatures(feats, f=>f.properties.id); setLevel('rb'); return; }
+  if (kind==='kr'){ const feats=allKR(); drawFeatures(feats,true); labelFeatures(feats, f=>f.properties.id); setLevel('kr'); return; }
+  if (kind==='gm'){ const feats=allGM(); drawFeatures(feats,true); labelFeatures(feats, f=>f.properties.id); setLevel('gm'); return; }
+}
+
+// UI
+upBtn.addEventListener('click', ()=>goHigher());
+resetBtn.addEventListener('click', ()=>{ selRB=null; selKR=null; setLevel('bl'); renderBL(); });
+document.getElementById('labelToggle').addEventListener('click', ()=>{
+  showLabels=!showLabels; sw.classList.toggle('on', showLabels);
+  if (level==='bl') renderBL(); else if (level==='rb') renderRB(); else if (level==='kr') renderKR(); else renderGM();
+});
+quickGo.addEventListener('click', ()=>{ const v=quickSel.value; if (v) renderQuick(v); });
+
+// CSV: fehlende IDs (ohne Eintrag in attributes.json)
+missingBtn.addEventListener('click', ()=>{
+  if (!fullGeo){ alert('Daten noch nicht geladen.'); return; }
+  const missing = [];
+  for (const f of fullGeo.features){
+    const id = f.properties?.id;
+    if (!id) continue;
+    if (!ATTR.has(id)) missing.push(id);
+  }
+  const rows = ['id'].concat(missing).join('\n');
+  const blob = new Blob([rows], {type:'text/csv;charset=utf-8;'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'missing_ids.csv';
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+});
+
+// Laden
+Promise.all([
+  fetch('data/bayern_id_art.json').then(r=>r.json()),
+  fetch('data/attributes.json').then(r=>r.json())
+]).then(([topo, attrs])=>{
+  for (const [id,obj] of Object.entries(attrs)) ATTR.set(id, obj);
+  const objName = Object.keys(topo.objects)[0];
+  fullGeo = topojson.feature(topo, topo.objects[objName]);
+  setLevel('bl'); renderBL();
+}).catch(err=>{ console.error(err); alert('Fehler beim Laden der Daten.'); });
+</script>
+</body>
+</html>
