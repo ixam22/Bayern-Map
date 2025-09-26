@@ -1,0 +1,8122 @@
+{
+  "09171111": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09171112": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09171113": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09171114": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09171115": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09171116": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09171117": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09171118": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09171119": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09171121": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09171122": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09171123": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09171124": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09171125": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09171126": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09171127": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09171129": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09171130": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09171131": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09171132": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09171133": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09171134": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09171135": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09171137": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09172111": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09172112": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09172114": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09172115": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09172116": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09172117": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09172118": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09172122": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09172124": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09172128": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09172129": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09172130": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09172131": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09172132": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09172134": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09173111": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09173112": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09173113": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09173115": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09173118": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09173120": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09173123": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09173124": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09173126": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09173127": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09173130": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09173131": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09173133": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09173134": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09173135": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09173137": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09173140": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09173141": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09173142": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09173145": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09173147": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09174111": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09174113": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09174115": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09174118": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09174121": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09174122": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09174126": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09174131": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09174135": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09174136": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09174137": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09174141": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09174143": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09174146": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09174147": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09174150": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09174151": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09175111": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09175112": {
+    "partei": "GRÜNE",
+    "geschlecht": "m"
+  },
+  "09175113": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09175114": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09175115": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09175116": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09175118": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09175119": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09175121": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09175122": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09175123": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09175124": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09175127": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09175128": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09175131": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09175132": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09175133": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09175135": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09175136": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09175137": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09175139": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09176111": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09176112": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09176114": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09176116": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09176118": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09176120": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09176121": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09176122": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09176123": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09176124": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09176126": {
+    "partei": "SPD",
+    "geschlecht": "w"
+  },
+  "09176129": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09176131": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09176132": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09176137": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09176138": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09176139": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09176143": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09176147": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09176148": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09176149": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09176150": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09176153": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09176155": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09176160": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09176161": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09176164": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09176165": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09176166": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09176167": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09177112": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09177113": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09177114": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09177115": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09177116": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09177117": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09177118": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09177119": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09177120": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09177121": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09177122": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09177123": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09177124": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09177126": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09177127": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "w"
+  },
+  "09177130": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09177131": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09177133": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09177134": {
+    "partei": "SPD",
+    "geschlecht": "w"
+  },
+  "09177135": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09177137": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09177138": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09177139": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09177142": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09177143": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09177144": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09178113": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09178115": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09178116": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09178120": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09178122": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09178123": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09178124": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09178125": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09178129": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09178130": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09178132": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09178133": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09178136": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09178137": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09178138": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "w"
+  },
+  "09178140": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09178142": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09178143": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09178144": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09178145": {
+    "partei": "GRÜNE",
+    "geschlecht": "m"
+  },
+  "09178150": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09178155": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09178156": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09178157": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09179111": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09179113": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09179114": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09179117": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09179118": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09179119": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09179121": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09179123": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09179125": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09179126": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09179128": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09179130": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09179131": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09179132": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09179134": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09179136": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09179137": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09179138": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09179140": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09179142": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09179145": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09179147": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09179149": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09180112": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09180113": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09180114": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09180115": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09180116": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09180117": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09180118": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09180119": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09180122": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09180123": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09180124": {
+    "partei": "ÖDP",
+    "geschlecht": "m"
+  },
+  "09180125": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09180126": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09180127": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09180128": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09180129": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09180131": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09180132": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09180133": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09180134": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09180135": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09180136": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09181111": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09181113": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09181114": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09181115": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09181116": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09181118": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09181120": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09181121": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09181122": {
+    "partei": "ÖDP",
+    "geschlecht": "m"
+  },
+  "09181123": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09181124": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09181126": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09181127": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09181128": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09181129": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09181130": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09181131": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09181132": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09181133": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09181134": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09181135": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09181137": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09181138": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09181139": {
+    "partei": "GRÜNE",
+    "geschlecht": "m"
+  },
+  "09181140": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09181141": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09181142": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09181143": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09181144": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09181145": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09181146": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09182111": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09182112": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09182114": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09182116": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09182119": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09182120": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09182123": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09182124": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09182125": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09182127": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09182129": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09182131": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09182132": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09182133": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09182134": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09182136": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09182137": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09183112": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09183113": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09183114": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09183115": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09183116": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09183118": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09183119": {
+    "partei": "SPD",
+    "geschlecht": "w"
+  },
+  "09183120": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09183122": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09183123": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09183124": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09183125": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09183126": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09183127": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09183128": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09183129": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09183130": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09183131": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09183132": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09183134": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09183135": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09183136": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09183138": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09183139": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09183140": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09183143": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09183144": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09183145": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09183147": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09183148": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09183151": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09184112": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09184113": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09184114": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09184118": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09184119": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09184120": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09184121": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09184122": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09184123": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09184127": {
+    "partei": "SPD",
+    "geschlecht": "w"
+  },
+  "09184129": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09184130": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09184131": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09184132": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09184134": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09184135": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09184136": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09184137": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09184138": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09184139": {
+    "partei": "GRÜNE",
+    "geschlecht": "w"
+  },
+  "09184140": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09184141": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09184142": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09184144": {
+    "partei": "BP",
+    "geschlecht": "m"
+  },
+  "09184145": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09184146": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09184147": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09184148": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09184149": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09185113": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09185116": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09185118": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09185123": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09185125": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09185127": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09185131": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09185139": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09185140": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09185143": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09185149": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09185150": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09185153": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09185157": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09185158": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09185163": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09185166": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09185168": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09186113": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09186116": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09186122": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09186125": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09186126": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09186128": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09186130": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09186132": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09186137": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09186139": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09186143": {
+    "partei": "GRÜNE",
+    "geschlecht": "m"
+  },
+  "09186144": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09186146": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09186147": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09186149": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09186151": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09186152": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09186158": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09186162": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09187113": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187114": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187116": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187117": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09187118": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09187120": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09187121": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187122": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09187123": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187124": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09187125": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187126": {
+    "partei": "GRÜNE",
+    "geschlecht": "m"
+  },
+  "09187128": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09187129": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09187130": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187131": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09187132": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09187134": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187137": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09187138": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187139": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09187142": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09187145": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187148": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187150": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09187154": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187156": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09187157": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187159": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187162": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187163": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09187164": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187165": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09187167": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187168": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09187169": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187170": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187172": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187173": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187174": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187176": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187177": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187179": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09187181": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09187182": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09187186": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09188113": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09188117": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09188118": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09188120": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09188121": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09188124": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09188126": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09188127": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09188132": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09188137": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09188139": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09188141": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09188144": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09188145": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09189111": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09189113": {
+    "partei": "GRÜNE",
+    "geschlecht": "m"
+  },
+  "09189114": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09189115": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09189118": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09189119": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09189120": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09189124": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09189126": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09189127": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09189129": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09189130": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09189133": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09189134": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09189135": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09189137": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09189139": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09189140": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09189141": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09189142": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09189143": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09189145": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09189146": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09189148": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09189149": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09189150": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09189152": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09189154": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09189155": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09189157": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09189159": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09189160": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09189161": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09189162": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09189165": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09190111": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09190113": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09190114": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09190115": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09190117": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09190118": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09190120": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09190121": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09190126": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09190129": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09190130": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09190131": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09190132": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09190133": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09190135": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09190136": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09190138": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09190139": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09190140": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09190141": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09190142": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09190143": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09190144": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09190145": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09190148": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09190149": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09190151": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09190152": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09190153": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09190154": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09190157": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09190158": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09190159": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09190160": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09271111": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09271113": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09271114": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09271116": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09271118": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09271119": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09271122": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09271123": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09271125": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09271126": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09271127": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09271128": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09271130": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09271132": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09271135": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09271138": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09271139": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09271140": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09271141": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "w"
+  },
+  "09271143": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09271146": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09271148": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09271149": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09271151": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09271152": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09271153": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09272116": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09272118": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09272119": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09272120": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09272121": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09272122": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09272126": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09272127": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09272128": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09272129": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09272134": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09272136": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09272138": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09272139": {
+    "partei": "BP",
+    "geschlecht": "m"
+  },
+  "09272140": {
+    "partei": "SPD",
+    "geschlecht": "w"
+  },
+  "09272141": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09272142": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09272143": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09272145": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09272146": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09272147": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09272149": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09272150": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09272151": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09272152": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09273111": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09273113": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09273115": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09273116": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09273119": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09273121": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09273125": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09273127": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09273133": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09273137": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09273139": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09273141": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09273147": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09273152": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09273159": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09273163": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09273164": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09273165": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09273166": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09273172": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09273175": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09273177": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09273178": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09273181": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09274111": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09274112": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09274113": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09274114": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09274118": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09274119": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09274120": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09274121": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09274124": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09274126": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09274127": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09274128": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09274132": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09274134": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09274135": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09274141": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09274145": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09274146": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09274153": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09274154": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09274156": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09274165": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09274172": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09274174": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09274176": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09274179": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09274182": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09274183": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09274184": {
+    "partei": "SPD",
+    "geschlecht": "w"
+  },
+  "09274185": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09274187": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09274188": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09274191": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09274193": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09274194": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09275111": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09275112": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09275114": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09275116": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09275117": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09275118": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09275119": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09275120": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09275121": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09275122": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09275124": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09275125": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09275126": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09275127": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09275128": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09275130": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09275131": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09275132": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09275133": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09275134": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09275135": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09275137": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09275138": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09275141": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09275143": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09275144": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09275145": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09275146": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09275148": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09275149": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09275150": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09275151": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09275152": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09275153": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09275154": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09275156": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09275159": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09275160": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09276111": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09276113": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09276115": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09276116": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09276117": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09276118": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09276120": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09276121": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09276122": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09276123": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09276126": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09276127": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09276128": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09276129": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09276130": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09276134": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09276135": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09276138": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09276139": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09276142": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09276143": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09276144": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09276146": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09276148": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09277111": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09277112": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09277113": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09277114": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09277116": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09277117": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09277118": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09277119": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09277121": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09277122": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09277124": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09277126": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09277127": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09277128": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09277131": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09277133": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09277134": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09277138": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09277139": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09277140": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09277141": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09277142": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09277144": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09277145": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09277147": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09277148": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09277149": {
+    "partei": "ÖDP",
+    "geschlecht": "w"
+  },
+  "09277151": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09277152": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09277153": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09277154": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09278112": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09278113": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09278116": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09278117": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09278118": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09278120": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09278121": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09278123": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09278129": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09278134": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09278139": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09278140": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09278141": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09278143": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09278144": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09278146": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09278147": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09278148": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09278149": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09278151": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09278154": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09278159": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09278167": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09278170": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09278171": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09278172": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09278177": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "w"
+  },
+  "09278178": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09278179": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09278182": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09278184": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09278187": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09278189": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09278190": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09278192": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09278197": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09278198": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09279112": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09279113": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09279115": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09279116": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09279122": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09279124": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09279125": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09279126": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09279127": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09279128": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09279130": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09279132": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09279134": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09279135": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09279137": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09371111": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09371113": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09371116": {
+    "partei": "SPD",
+    "geschlecht": "w"
+  },
+  "09371118": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09371119": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09371120": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09371121": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09371122": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09371123": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09371126": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09371127": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09371128": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09371129": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09371131": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09371132": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09371135": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09371136": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09371140": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09371141": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09371144": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09371146": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09371148": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09371150": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09371151": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09371154": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09371156": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09371157": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09372112": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09372113": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09372115": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09372116": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09372117": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09372124": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09372125": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09372126": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09372128": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09372130": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09372135": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09372137": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09372138": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09372142": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09372143": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09372144": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09372146": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09372147": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09372149": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09372150": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09372151": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09372153": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "w"
+  },
+  "09372154": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09372155": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09372157": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09372158": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09372161": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09372163": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09372164": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09372165": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09372167": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09372168": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09372169": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09372170": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09372171": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09372174": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09372175": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09372177": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09372178": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09373112": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09373113": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09373114": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09373115": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09373119": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09373121": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09373126": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09373134": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09373140": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09373143": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09373146": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09373147": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09373151": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09373153": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09373155": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09373156": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09373159": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09373160": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09373167": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09374111": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09374117": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09374118": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09374119": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09374121": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09374122": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09374123": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09374124": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09374127": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09374128": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09374129": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09374131": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09374132": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09374133": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09374134": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09374137": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09374139": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09374140": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09374144": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09374146": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09374147": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09374148": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09374149": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09374150": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09374154": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09374155": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09374156": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09374157": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09374158": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09374159": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09374160": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09374162": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09374163": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09374164": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09374165": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09374166": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09374168": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09374170": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09375113": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09375114": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09375115": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09375116": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09375117": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09375118": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09375119": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09375120": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09375122": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09375127": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09375130": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09375131": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09375143": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09375148": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09375153": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09375156": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09375161": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09375162": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09375165": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09375170": {
+    "partei": "SPD",
+    "geschlecht": "w"
+  },
+  "09375171": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09375174": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09375175": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09375179": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09375180": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "w"
+  },
+  "09375181": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09375182": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09375183": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09375184": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09375190": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09375191": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09375196": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09375199": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09375201": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09375204": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09375205": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09375208": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09375209": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09375210": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09375211": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09375213": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "w"
+  },
+  "09376112": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09376116": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09376117": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09376119": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09376122": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09376125": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09376131": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09376133": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09376141": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09376144": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09376146": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09376147": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09376148": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09376149": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09376150": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09376151": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09376153": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09376159": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09376160": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09376161": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09376162": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09376163": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09376164": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09376167": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09376168": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09376169": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09376170": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09376171": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09376172": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09376173": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09376175": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09376176": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09376178": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09377112": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09377113": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09377115": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09377116": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09377117": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09377118": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09377119": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09377127": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09377128": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09377129": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09377131": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09377132": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09377133": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09377137": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09377139": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09377141": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09377142": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09377143": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09377145": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09377146": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09377148": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09377149": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09377154": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09377157": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09377158": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09377159": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09471111": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09471115": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09471117": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09471119": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09471120": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09471122": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09471123": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09471128": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09471131": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09471133": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09471137": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09471140": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09471142": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09471145": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09471150": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09471151": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09471152": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09471154": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09471155": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09471159": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09471165": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09471169": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09471172": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09471173": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09471174": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09471175": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09471185": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09471186": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09471189": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09471191": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09471195": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09471207": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09471208": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09471209": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09471214": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09471220": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09472111": {
+    "partei": "GRÜNE",
+    "geschlecht": "m"
+  },
+  "09472115": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09472116": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09472118": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09472119": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09472121": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09472127": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09472131": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09472133": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09472138": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09472139": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09472140": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09472141": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09472143": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09472146": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09472150": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09472154": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09472155": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09472156": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09472164": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09472166": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09472167": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09472175": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09472176": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09472177": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09472179": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09472180": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09472184": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09472188": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09472190": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09472197": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09472198": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09472199": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09473112": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09473120": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09473121": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09473132": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09473134": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09473138": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09473141": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09473144": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09473151": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09473153": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09473158": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09473159": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09473165": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09473166": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09473170": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09473174": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09473175": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09474119": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09474121": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09474122": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09474123": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09474124": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09474126": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09474129": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09474132": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09474133": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09474134": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09474135": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09474137": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09474138": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09474140": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09474143": {
+    "partei": "SPD",
+    "geschlecht": "w"
+  },
+  "09474144": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09474145": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09474146": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09474147": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09474154": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09474156": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09474158": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09474160": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09474161": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09474168": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09474171": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09474173": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09474175": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09474176": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09475112": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09475113": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09475120": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09475123": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09475127": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09475128": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09475136": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09475137": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09475141": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09475142": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09475145": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09475146": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09475154": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09475156": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09475158": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09475161": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09475162": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09475165": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09475168": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09475169": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09475171": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09475174": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09475175": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09475181": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09475182": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09475184": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09475189": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09476145": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09476146": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09476152": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09476154": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09476159": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09476164": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09476166": {
+    "partei": "SPD",
+    "geschlecht": "w"
+  },
+  "09476171": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09476175": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09476177": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09476178": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09476179": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09476180": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09476182": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09476183": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09476184": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09476185": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09476189": {
+    "partei": "SPD",
+    "geschlecht": "w"
+  },
+  "09477117": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09477118": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09477119": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09477121": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09477124": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09477127": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09477128": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09477129": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09477135": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09477136": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09477138": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09477139": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09477142": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09477143": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09477148": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09477151": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09477156": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09477157": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09477158": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09477159": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09477163": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09477164": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09478111": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09478116": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09478120": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09478127": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09478139": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09478143": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09478144": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09478145": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09478155": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09478165": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09478176": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09479111": {
+    "partei": "SPD",
+    "geschlecht": "w"
+  },
+  "09479112": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09479126": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09479127": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09479129": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09479135": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09479136": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09479138": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09479145": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09479147": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09479150": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09479152": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09479158": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09479159": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09479161": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09479166": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09479169": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09571111": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571113": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09571114": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571115": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09571122": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09571125": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571127": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09571128": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571130": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09571132": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571134": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09571135": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571136": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09571137": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571139": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09571141": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571145": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09571146": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571152": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571154": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571155": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571165": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09571166": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09571169": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571170": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571171": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09571174": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09571175": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09571177": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571178": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09571179": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09571180": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09571181": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09571183": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09571188": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571189": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09571190": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09571192": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571193": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571194": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571196": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09571198": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09571199": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571200": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09571205": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09571208": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571214": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09571216": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571217": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09571218": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571222": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571223": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571224": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09571225": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571226": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09571227": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09571228": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09571229": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09572111": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09572114": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09572115": {
+    "partei": "SPD",
+    "geschlecht": "w"
+  },
+  "09572119": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09572120": {
+    "partei": "SPD",
+    "geschlecht": "w"
+  },
+  "09572121": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09572126": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09572127": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09572130": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09572131": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09572132": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09572133": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09572135": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09572137": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09572139": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09572141": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09572142": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09572143": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09572147": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09572149": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09572154": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09572158": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09572159": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09572160": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09572164": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09573111": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09573114": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09573115": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09573120": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09573122": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09573123": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09573124": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09573125": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09573126": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09573127": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09573129": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09573130": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09573133": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09573134": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09574111": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09574112": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09574117": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09574120": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09574123": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09574128": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09574129": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09574131": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09574132": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09574135": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09574138": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09574139": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09574140": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09574141": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09574145": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09574146": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09574147": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09574150": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09574152": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09574154": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09574155": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09574156": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09574157": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09574158": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09574160": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09574161": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09574164": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09575112": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09575113": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09575115": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09575116": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09575117": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09575118": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09575119": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09575121": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09575122": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09575124": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09575125": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09575127": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09575128": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09575129": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09575130": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09575133": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09575134": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09575135": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09575138": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09575143": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09575144": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09575145": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "w"
+  },
+  "09575146": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09575147": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09575150": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09575152": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09575153": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09575155": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09575156": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09575157": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09575161": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09575163": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09575165": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09575166": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09575167": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09575168": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09575179": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09575181": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09576111": {
+    "partei": "SPD",
+    "geschlecht": "w"
+  },
+  "09576113": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09576117": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09576121": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09576122": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09576126": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09576127": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09576128": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09576132": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09576137": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09576141": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09576142": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09576143": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09576147": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09576148": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09576151": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09577111": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09577113": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09577114": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09577115": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09577120": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09577122": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09577125": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09577127": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09577133": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09577136": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09577138": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09577140": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09577141": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09577148": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09577149": {
+    "partei": "GRÜNE",
+    "geschlecht": "m"
+  },
+  "09577150": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09577151": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09577158": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09577159": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09577161": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09577162": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09577163": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09577168": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09577172": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09577173": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09577177": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09577179": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09671111": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09671112": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09671113": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09671114": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09671119": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09671120": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09671121": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09671122": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09671124": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09671126": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09671127": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09671128": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09671130": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09671133": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09671134": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09671135": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09671136": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09671138": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09671139": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09671140": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09671141": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09671143": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09671148": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09671150": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09671152": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09671153": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09671155": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09671156": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09671157": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09671159": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09671160": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09671162": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09672111": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09672112": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09672113": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09672114": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09672117": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09672121": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09672122": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09672124": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09672126": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09672127": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09672131": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09672134": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09672135": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09672136": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09672138": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09672139": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09672140": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09672142": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09672143": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09672145": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09672149": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09672155": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09672157": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09672161": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09672163": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09672166": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09673113": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09673114": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09673116": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09673117": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09673123": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09673126": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09673127": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09673129": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09673130": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09673131": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09673133": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09673134": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09673135": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09673136": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09673141": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09673142": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09673146": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09673147": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09673149": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09673151": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09673153": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09673156": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09673160": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09673161": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09673162": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09673163": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09673167": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09673170": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09673171": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09673172": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09673173": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09673174": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09673175": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09673182": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09673183": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09673184": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09673186": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09674111": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09674118": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09674120": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09674121": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09674129": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09674130": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09674133": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09674139": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09674147": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09674149": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09674153": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09674159": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09674160": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09674163": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09674164": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09674171": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09674180": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09674184": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09674187": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09674190": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09674195": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09674201": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09674210": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09674219": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09674221": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09674223": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09675111": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09675112": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09675113": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09675114": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09675116": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09675117": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09675127": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09675131": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09675139": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09675141": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09675142": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09675144": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09675146": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09675147": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09675148": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09675149": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09675150": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09675155": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09675156": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "w"
+  },
+  "09675158": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09675161": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09675162": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09675165": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09675166": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09675167": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09675169": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09675170": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09675174": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09675177": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09675178": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09675179": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09676111": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09676112": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09676116": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09676117": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09676118": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09676119": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09676121": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09676122": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09676123": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09676124": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09676125": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09676126": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09676128": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09676131": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09676132": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09676133": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09676134": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09676135": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09676136": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09676139": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09676140": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09676141": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09676143": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09676144": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09676145": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09676151": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09676153": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09676156": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09676158": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09676160": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09676165": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09676169": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09677114": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09677116": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09677119": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09677120": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09677122": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09677125": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09677126": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09677127": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09677128": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09677129": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09677131": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09677132": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09677133": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09677135": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09677137": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09677142": {
+    "partei": "CSU",
+    "geschlecht": "m "
+  },
+  "09677146": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09677148": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09677149": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09677151": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09677154": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09677155": {
+    "partei": "GRÜNE",
+    "geschlecht": "m"
+  },
+  "09677157": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09677159": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09677164": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09677165": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09677166": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09677169": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09677170": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09677172": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09677175": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09677177": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09677178": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09677181": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09677182": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09677186": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09677189": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09677193": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09677200": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09677203": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09678115": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09678122": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09678123": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09678124": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09678128": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09678130": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09678132": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09678134": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09678135": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09678136": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09678138": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09678150": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09678153": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09678157": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09678160": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "w"
+  },
+  "09678164": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09678168": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09678170": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09678174": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09678175": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09678176": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09678178": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09678181": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09678183": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09678186": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09678190": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09678192": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09678193": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09678196": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09679114": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09679117": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09679118": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09679122": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09679124": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09679126": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09679128": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09679130": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09679131": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09679134": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09679135": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09679136": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09679137": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09679138": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09679141": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09679142": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09679143": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09679144": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09679146": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09679147": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09679149": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09679153": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09679154": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09679155": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09679156": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09679161": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09679164": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09679165": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09679167": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09679169": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09679170": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09679174": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09679175": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09679176": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09679177": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09679179": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09679180": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09679182": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09679185": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09679187": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09679188": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09679192": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09679193": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09679196": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09679200": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09679201": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09679202": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09679204": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09679205": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09679206": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09679209": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09771111": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09771112": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09771113": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09771114": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09771122": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09771129": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09771130": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09771140": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09771141": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09771142": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09771144": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09771145": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09771146": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09771149": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09771155": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09771156": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09771158": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09771160": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09771162": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09771163": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09771165": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09771168": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09771169": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09771176": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09772111": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09772114": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09772115": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09772117": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09772121": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09772125": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09772126": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09772130": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09772131": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09772134": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09772136": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09772137": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09772141": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09772145": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09772147": {
+    "partei": "GRÜNE",
+    "geschlecht": "m"
+  },
+  "09772148": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09772149": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09772151": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09772156": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09772157": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09772159": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09772160": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09772162": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09772163": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09772166": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09772167": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09772168": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09772170": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09772171": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09772177": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09772178": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09772179": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09772184": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09772185": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09772186": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09772197": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09772200": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09772202": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09772207": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09772209": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09772211": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09772214": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09772215": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09772216": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09772217": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09772223": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09773111": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09773112": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09773113": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09773116": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09773117": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09773119": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09773122": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09773125": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09773133": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09773136": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09773137": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09773139": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09773140": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09773143": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09773144": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09773146": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09773147": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09773150": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09773153": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09773164": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09773170": {
+    "partei": "SPD",
+    "geschlecht": "w"
+  },
+  "09773179": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09773182": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09773183": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09773186": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09773187": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09773188": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09774111": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09774115": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09774116": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09774117": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09774118": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09774119": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09774121": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09774122": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09774124": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09774127": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09774129": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09774133": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09774135": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09774136": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09774140": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09774143": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09774144": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09774145": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09774148": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09774150": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09774151": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09774155": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09774160": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09774162": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09774166": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09774171": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09774174": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09774178": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09774185": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09774189": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09774191": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09774192": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09774196": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09774198": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09775111": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09775115": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09775118": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09775126": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09775129": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09775132": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09775134": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09775135": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09775139": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09775141": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09775142": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09775143": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09775149": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09775152": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09775161": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09775162": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09775164": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09776111": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09776112": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09776113": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09776114": {
+    "partei": "GRÜNE",
+    "geschlecht": "m"
+  },
+  "09776115": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09776116": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09776117": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09776118": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09776120": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09776121": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09776122": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09776124": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09776125": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09776126": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09776127": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09776128": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09776129": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09776130": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09776131": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777111": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777112": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777114": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777118": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777121": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09777124": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09777125": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777128": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777129": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09777130": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777131": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777135": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777138": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09777139": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777140": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777141": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777144": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777145": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777147": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777149": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777151": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09777152": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777153": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09777154": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09777155": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777157": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09777158": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09777159": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777163": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777164": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09777165": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777166": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777167": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777168": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09777169": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09777170": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777171": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777172": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777173": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777175": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777176": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777177": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777179": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09777182": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09777183": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778111": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778113": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09778115": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09778116": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09778118": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09778119": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778120": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778121": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778123": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09778127": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778130": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778134": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09778136": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778137": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09778139": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778144": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09778149": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09778150": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778151": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778157": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778158": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09778161": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778162": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778163": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778164": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778165": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09778168": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09778169": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09778171": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09778173": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09778177": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09778180": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09778183": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778184": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778186": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778187": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778188": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09778190": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778196": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09778199": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778202": {
+    "partei": "GRÜNE",
+    "geschlecht": "m"
+  },
+  "09778203": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778204": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778205": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778207": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09778209": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778214": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09778216": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778217": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09778218": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09778219": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09778221": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779111": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779112": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779115": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09779117": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779126": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779129": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779130": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09779131": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09779136": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09779138": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779146": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779147": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779148": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09779149": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779154": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779155": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779162": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09779163": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779167": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09779169": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779176": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779177": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779178": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779180": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09779181": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779184": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09779185": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779186": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09779187": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09779188": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779192": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779194": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779196": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779197": {
+    "partei": "SPD",
+    "geschlecht": "m"
+  },
+  "09779198": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779201": {
+    "partei": "FREIE WÄHLER",
+    "geschlecht": "m"
+  },
+  "09779203": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09779206": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779217": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09779218": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779224": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779226": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779228": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09779231": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09780112": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09780113": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09780114": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09780115": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09780116": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09780117": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09780118": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09780119": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09780120": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09780121": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09780122": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09780123": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "w"
+  },
+  "09780124": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09780125": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09780127": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09780128": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09780131": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09780132": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09780133": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09780134": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09780137": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09780139": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09780140": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09780143": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09780144": {
+    "partei": "Sonstige Parteien",
+    "geschlecht": "m"
+  },
+  "09780145": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  },
+  "09780146": {
+    "partei": "CSU",
+    "geschlecht": "m"
+  },
+  "09780147": {
+    "partei": "CSU",
+    "geschlecht": "w"
+  }
+}

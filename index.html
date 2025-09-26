@@ -3,16 +3,20 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Bayern – Drilldown (PNG fix + „tiefer“ im GM-Fokus)</title>
+<title>Bayern – Drilldown (Parteien + Geschlecht)</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <style>
   :root{ --bg:#f4f6f8; --panel:#fff; --text:#111827; --muted:#6b7280; --border:#e5e7eb; --hover:#edf0f3; --on:#e9efff; }
   html,body{height:100%;margin:0;background:var(--bg);color:var(--text);font:14px system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
   #map{height:100%}
 
-  .panel{ position:absolute; left:12px; top:12px; z-index:1000; background:var(--panel);
-          border:1px solid var(--border); border-radius:14px; padding:12px; min-width:320px;
-          box-shadow:0 10px 30px rgba(0,0,0,.08); }
+  /* Panel weiter nach unten & schmaler */
+  .panel{
+    position:absolute; left:12px; top:48px; z-index:1000; background:var(--panel);
+    border:1px solid var(--border); border-radius:14px; padding:12px;
+    min-width:280px; max-width:420px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+  }
   .panel h3{margin:0 0 8px; font-size:18px}
   .row{display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-top:6px}
   .btn{appearance:none; border:1px solid var(--border); background:#fff; color:#111;
@@ -22,6 +26,7 @@
   .btn:focus, .btn:focus-visible{ outline:none; box-shadow:none; border-color:var(--border); }
 
   .switch{display:inline-flex; align-items:center; gap:8px; cursor:pointer}
+  .switch > span:first-child{font-size:13px}
   .sw{ width:38px; height:22px; border-radius:999px; position:relative; background:#e5e7eb;
        transition:background .15s; border:1px solid var(--border); }
   .sw::after{ content:""; position:absolute; top:2px; left:2px; width:18px; height:18px;
@@ -30,7 +35,7 @@
 
   .tiles{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; width:100%; margin-top:8px}
   .tile{ border:1px solid var(--border); border-radius:12px; padding:10px 12px; text-align:center; cursor:pointer;
-         user-select:none; transition:background .15s, border-color .15s, transform .02s ease-in }
+         user-select:none; transition:background .15s, border-color .15s, transform .02s ease-in; font-size:13px }
   .tile.kRB::before{content:"RB"; font-weight:700; margin-right:6px}
   .tile.kKR::before{content:"KR"; font-weight:700; margin-right:6px}
   .tile.kGM::before{content:"GM"; font-weight:700; margin-right:6px}
@@ -44,6 +49,8 @@
   .leaflet-tooltip.tt{ background:#fff; color:#111; border:1px solid var(--border); border-radius:10px; padding:8px 10px;
                         box-shadow:0 8px 20px rgba(0,0,0,.12); font-size:12px }
   .tt h4{margin:0 0 2px; font-size:13px} .tt .muted{color:#6b7280}
+  .tt .kv{margin:4px 0}
+  .swatch{display:inline-block; width:10px; height:10px; border:1px solid rgba(0,0,0,.25); border-radius:2px; vertical-align:middle; margin-right:6px}
 
   .pp{min-width:240px}
   .pp h4{margin:0 0 4px; font-size:14px}
@@ -52,6 +59,17 @@
   .pp .kv span{display:inline-block; min-width:120px; color:#6b7280}
   .pp .actions{display:flex; gap:8px; margin-top:8px}
   .pp .actions .btn{padding:6px 10px; border-radius:10px}
+
+  /* --- Parteien-Legende --- */
+  .legend {margin-top:10px; border-top:1px solid var(--border); padding-top:8px}
+  .legend h4{margin:0 0 6px; font-size:14px}
+  .legend .party-list{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px}
+  .party-item{display:flex; align-items:center; gap:8px}
+  .party-swatch{width:14px; height:14px; border-radius:3px; border:1px solid rgba(0,0,0,.15)}
+  .party-toggle{margin-left:auto; width:36px; height:20px; border:1px solid var(--border); border-radius:999px; position:relative; cursor:pointer; background:#e5e7eb}
+  .party-toggle::after{content:""; position:absolute; top:1px; left:1px; width:16px; height:16px; background:#fff; border-radius:50%; box-shadow:0 1px 2px rgba(0,0,0,.12); transition:left .15s}
+  .party-toggle.on{background:#dbeafe; border-color:#93c5fd}
+  .party-toggle.on::after{left:19px}
 </style>
 </head>
 <body>
@@ -71,6 +89,10 @@
       <span>Labels anzeigen</span>
       <span class="sw" id="sw"></span>
     </label>
+    <label class="switch" id="hatchLabel" style="margin-left:12px">
+      <span>Schraffur (w) aktiv</span>
+      <span class="sw on" id="swHatch"></span>
+    </label>
   </div>
 
   <div class="row" style="margin-top:8px; width:100%">
@@ -82,24 +104,28 @@
     </div>
   </div>
   <div class="row"><small class="muted">Auto-Modus zeigt passend zur Ebene (BL/RB/KR/GM).</small></div>
+
+  <div class="legend">
+    <h4>Parteien</h4>
+    <div id="partyList" class="party-list"></div>
+    <small class="muted">Gemeinden werden in Parteifarben gefüllt. „w“ kann optional schraffiert werden.</small>
+  </div>
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/topojson-client@3"></script>
 <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
-<!-- WICHTIG: nach Leaflet laden -->
 <script src="https://unpkg.com/leaflet-image/leaflet-image.js"></script>
 
 <script>
-// --- Map: SVG-Renderer (kompatibel mit leaflet-image) ---
+// --- Map: SVG-Renderer ---
 const map = L.map('map', { zoomControl:false }).setView([48.95,11.5],7);
 const svgRenderer = L.svg({ padding:0.5 });
 L.control.zoom({ position:'topright' }).addTo(map);
 
-// Styles
+// Styles (Basis/Hover – Füllfarbe kommt dynamisch)
 const styleBase   ={ color:'#1f77b4', weight:1.4, fillColor:'#ffffff', fillOpacity:0.92 };
 const styleHover  ={ color:'#1f77b4', weight:1.8, fillColor:'#edf0f3', fillOpacity:0.95 };
-const styleSelect ={ color:'#1f5aa8', weight:2.2, fillColor:'#e9efff', fillOpacity:0.95 };
 
 // Texte
 const ART_BL='(Bundesland)', ART_RB='(Regierungsbezirk)', ART_KR='(Kreis / kreisfreie Stadt)', ART_GM='(Gemeinde)';
@@ -110,9 +136,12 @@ const upBtn    = document.getElementById('upBtn');
 const resetBtn = document.getElementById('resetBtn');
 const sw       = document.getElementById('sw');
 const labelToggle = document.getElementById('labelToggle');
+const swHatch  = document.getElementById('swHatch');
+const hatchLabel = document.getElementById('hatchLabel');
 const missingBtn = document.getElementById('missingBtn');
 const pngBtn   = document.getElementById('pngBtn');
 const tilesEl  = document.getElementById('tiles');
+const partyListEl = document.getElementById('partyList');
 
 // Data + helpers
 let ATTR = new Map();
@@ -124,6 +153,7 @@ const KK_MAP = {"K":"Kommune","M":"Markt","St":"Stadt","GKSt":"Große Kreisstadt
 let fullGeo, layer=null, labels=L.layerGroup().addTo(map);
 let focus='bl', selRB=null, selKR=null;
 let showLabels=false;
+let hatchEnabled=true;
 let selectedLayer = null;
 
 // Kachelwahl
@@ -155,7 +185,7 @@ const setFocus = f=>{ focus=f; updateFocusTitle(); };
 function clearLayers(){
   if (layer) map.removeLayer(layer);
   labels.clearLayers();
-  if (selectedLayer){ selectedLayer.setStyle(styleBase); selectedLayer=null; }
+  if (selectedLayer){ selectedLayer.setStyle(getStyleForFeature(selectedLayer.feature)); selectedLayer=null; }
 }
 
 function isGemeinde(id, art){ return (String(id).length===8) || /gemeinde/i.test(art||''); }
@@ -168,27 +198,53 @@ function infoRows(id){
   if (kk) html += `<div class="kv"><span>Kommunenklasse:</span> ${kk}</div>`;
   return html;
 }
+
+// Tooltip: für Gemeinden Partei + Geschlecht einblenden
 function tooltipHTML(id){
   const a = ATTR.get(id)||{};
-  return `<div class="pp"><h4>${a.name||id}</h4><div class="muted">${a.art||''}</div>${infoRows(id)}</div>`;
+  const title = a.name || id;
+  let extra = '';
+  if (String(id).length===8){
+    const m = GM_META.get(id) || {};
+    const party = m.partei || 'Sonstige Parteien';
+    const sex   = (m.geschlecht || '').toLowerCase();
+    const col   = PARTY_COLORS[party] || PARTY_COLORS['Sonstige Parteien'];
+    const sexTxt = sex==='w' ? 'weiblich' : (sex==='m' ? 'männlich' : '—');
+    extra = `<div class="kv"><span class="swatch" style="background:${col}"></span><strong>${party}</strong> &middot; <span class="muted">${sexTxt}</span></div>`;
+  }
+  return `<div class="pp leaflet-popup-content"><div class="leaflet-tooltip-content">
+    <div class="tt"><h4>${title}</h4>
+      <div class="muted">${a.art||''}</div>
+      ${extra}
+      ${infoRows(id)}
+    </div>
+  </div></div>`;
 }
+
 function popupHTML(id){
   const a = ATTR.get(id)||{};
   const idLen = String(id).length;
   const isGmFocus = (focus==='gm');
   const inSingle  = (isGmFocus && gmSingleId!==null);
 
-  // BL->RB, RB->KR, KR->GM; zusätzlich: im GM-Fokus für GM (8-stellig) "tiefer" sichtbar, wenn NICHT Einzelansicht
   const canDownBase = (idLen===2 || idLen===3 || idLen===5);
-  const showDown = isGmFocus
-      ? (!inSingle && idLen===8) || canDownBase   // im GM-Fokus: GM klickbar nach unten in Einzelansicht
-      : canDownBase;
+  const showDown = isGmFocus ? (!inSingle && idLen===8) || canDownBase : canDownBase;
+  const showUp = (focus!=='bl');
 
-  const showUp = (focus!=='bl'); // überall außer BL
+  // kleine Partei/Geschlecht-Zeile auch im Popup
+  const m = String(id).length===8 ? (GM_META.get(id) || {}) : {};
+  const party = m.partei || null;
+  const sex   = (m.geschlecht || '').toLowerCase();
+  const pCol  = party ? (PARTY_COLORS[party] || PARTY_COLORS['Sonstige Parteien']) : null;
+  const metaLine = party
+      ? `<div class="kv"><span>Partei:</span> <span><span class="swatch" style="background:${pCol}"></span>${party}</span></div>
+         <div class="kv"><span>Geschlecht:</span> ${sex==='w'?'weiblich':(sex==='m'?'männlich':'—')}</div>`
+      : '';
 
   return `<div class="pp">
       <h4>${a.name||id}</h4>
       <div class="muted">${a.art||''}</div>
+      ${metaLine}
       ${infoRows(id)}
       <div class="actions">
         ${ showUp ? `<button class="btn" type="button" data-cmd="up" data-id="${id}">↖︎ höher</button>` : '' }
@@ -232,29 +288,154 @@ function labelFeatures(feats){
   }
 }
 
+/* =======================
+   Parteien / Geschlecht
+======================= */
+const PARTY_COLORS = {
+  'CSU': '#000000',
+  'SPD': '#e11919',
+  'Sonstige Parteien': '#9ca3af',
+  'FREIE WÄHLER': '#f59e0b',
+  'GRÜNE': '#1aa64a',
+  'ÖDP': '#ff7f0e',
+  'BP': '#1e90ff'
+};
+const partyVisible = new Map(Object.keys(PARTY_COLORS).map(k => [k, true]));
+const GM_META = new Map();
+
+// Legenden-UI
+function buildPartyLegend(){
+  partyListEl.innerHTML = '';
+  Object.entries(PARTY_COLORS).forEach(([name, color])=>{
+    const row = document.createElement('div'); row.className = 'party-item';
+    const sw = document.createElement('span'); sw.className='party-swatch'; sw.style.background=color;
+    const label = document.createElement('span'); label.textContent = name;
+    const tog = document.createElement('span'); tog.className='party-toggle on'; tog.dataset.party=name;
+    tog.addEventListener('click', ()=>{
+      const on = tog.classList.toggle('on');
+      partyVisible.set(name, on);
+      render(false);
+    });
+    row.append(sw,label,tog);
+    partyListEl.appendChild(row);
+  });
+}
+
+// SVG-Pattern (Schraffur) pro Parteifarbe
+function ensureHatchPatternFor(color){
+  const id = `hatch-${color.replace('#','')}`;
+  const svg = map.getPanes().overlayPane.querySelector('svg');
+  if (!svg) return null;
+  let defs = svg.querySelector('defs');
+  if (!defs){ defs = document.createElementNS('http://www.w3.org/2000/svg','defs'); svg.prepend(defs); }
+  let pat = defs.querySelector(`#${id}`);
+  if (pat) return id;
+
+  pat = document.createElementNS('http://www.w3.org/2000/svg','pattern');
+  pat.setAttribute('id', id);
+  pat.setAttribute('patternUnits', 'userSpaceOnUse');
+  pat.setAttribute('width', '8'); pat.setAttribute('height', '8');
+
+  const bg = document.createElementNS('http://www.w3.org/2000/svg','rect');
+  bg.setAttribute('x','0'); bg.setAttribute('y','0');
+  bg.setAttribute('width','8'); bg.setAttribute('height','8');
+  bg.setAttribute('fill', color);
+  pat.appendChild(bg);
+
+  const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+  path.setAttribute('d', 'M-2,2 l4,-4 M0,8 l8,-8 M6,10 l4,-4');
+  path.setAttribute('stroke', '#111827');
+  path.setAttribute('stroke-width', '1');
+  path.setAttribute('opacity', '.25');
+  path.setAttribute('fill', 'none');
+  pat.appendChild(path);
+
+  defs.appendChild(pat);
+  return id;
+}
+
+// Style je Feature (Parteifarbe + optionale Schraffur bei w)
+function getStyleForFeature(f){
+  const base = {...styleBase};
+  const id = f.properties?.id ?? '';
+  if (id.length === 8){
+    const meta = GM_META.get(id);
+    const party = meta?.partei ?? 'Sonstige Parteien';
+    const sex   = (meta?.geschlecht || '').toLowerCase();
+    const partyColor = PARTY_COLORS[party] || PARTY_COLORS['Sonstige Parteien'];
+    const visible = partyVisible.get(party) !== false;
+
+    if (!visible){
+      base.fillColor = '#e5e7eb';
+      base.color     = '#9ca3af';
+      base.fillOpacity = 0.6;
+      return base;
+    }
+
+    if (sex === 'w' && hatchEnabled){
+      const patId = ensureHatchPatternFor(partyColor);
+      base.fillColor = partyColor;   // Fallback
+      base._patternId = patId;       // Marker
+      base.fillOpacity = 1;
+    } else {
+      base.fillColor = partyColor;
+      base.fillOpacity = 0.92;
+    }
+  }
+  return base;
+}
+
+// angewandtes Pattern setzen, falls erforderlich
+function applyPatternIfNeeded(layer, styleObj){
+  if (!styleObj || !styleObj._patternId) return;
+  setTimeout(()=>{
+    try{
+      const el = layer.getElement();
+      if (el) el.setAttribute('fill', `url(#${styleObj._patternId})`);
+    }catch(_){}
+  }, 0);
+}
+
+/* =======================
+   Zeichnen
+======================= */
 function drawFeatures(feats){
   layer = L.geoJSON({ type:'FeatureCollection', features:feats }, {
     renderer: svgRenderer,
-    style: styleBase,
+    style: f => getStyleForFeature(f),
     onEachFeature:(f,l)=>{
-      l.on('mouseover', ()=>{ if (l!==selectedLayer) l.setStyle(styleHover); });
-      l.on('mouseout',  ()=>{ if (l!==selectedLayer) l.setStyle(styleBase); });
+      applyPatternIfNeeded(l, getStyleForFeature(f));
+
+      l.on('mouseover', ()=>{
+        if (l===selectedLayer) return;
+        l.setStyle({...getStyleForFeature(f), ...styleHover});
+        applyPatternIfNeeded(l, getStyleForFeature(f));
+      });
+      l.on('mouseout',  ()=>{
+        if (l===selectedLayer) return;
+        l.setStyle(getStyleForFeature(f));
+        applyPatternIfNeeded(l, getStyleForFeature(f));
+      });
+
       l.bindTooltip(()=>tooltipHTML(f.properties.id), {sticky:true, direction:'auto', opacity:0.95, className:'tt'});
+
       l.on('click', ()=>{
         const id=f.properties.id;
         if (id.length===3) selRB=id;
         if (id.length===5) selKR=id;
 
-        // Im GM-Fokus: Klick auf Gemeinde öffnet Popup; „tiefer“ im Popup schaltet in Einzelansicht
+        const selStyle = {...getStyleForFeature(f), color:'#1f5aa8', weight:2.2};
+        if (selectedLayer && selectedLayer!==l){
+          const oldF = selectedLayer.feature;
+          selectedLayer.setStyle(getStyleForFeature(oldF));
+          applyPatternIfNeeded(selectedLayer, getStyleForFeature(oldF));
+        }
+        selectedLayer=l; l.setStyle(selStyle); applyPatternIfNeeded(l, selStyle);
+
         if (focus==='gm' && id.length===8){
-          if (selectedLayer && selectedLayer!==l) selectedLayer.setStyle(styleBase);
-          selectedLayer=l; l.setStyle(styleSelect);
           l.bindPopup(popupHTML(id), {maxWidth:300}).openPopup();
           return;
         }
-
-        if (selectedLayer && selectedLayer!==l) selectedLayer.setStyle(styleBase);
-        selectedLayer=l; l.setStyle(styleSelect);
         l.bindPopup(popupHTML(id), {maxWidth:300}).openPopup();
       });
     }
@@ -284,11 +465,17 @@ document.addEventListener('click', (ev)=>{
   if (cmd==='down') goLower(id);
   map.closePopup();
 });
-map.on('popupclose', ()=>{ if (selectedLayer){ selectedLayer.setStyle(styleBase); selectedLayer=null; }});
+map.on('popupclose', ()=>{
+  if (selectedLayer){
+    const f = selectedLayer.feature;
+    selectedLayer.setStyle(getStyleForFeature(f));
+    applyPatternIfNeeded(selectedLayer, getStyleForFeature(f));
+    selectedLayer=null;
+  }
+});
 
 // ---------- Navigation ----------
 function goUpFrom(id){
-  // In GM-Einzelansicht: „höher“ verlässt nur die Einzelansicht (bleibt Fokus=GM)
   if (focus==='gm' && gmSingleId){
     gmSingleId = null;
     updateFocusTitle();
@@ -305,8 +492,8 @@ function goDownFrom(id){
   const s=String(id);
   if (s.length===2){ setFocus('rb'); }
   else if (s.length===3){ selRB=s; setFocus('kr'); }
-  else if (s.length===5){ selKR=s; setFocus('gm'); gmSingleId=null; } // GM-Liste im Kreis
-  else if (s.length===8 && focus==='gm'){ gmSingleId = s; updateFocusTitle(); } // Einzelansicht aktivieren
+  else if (s.length===5){ selKR=s; setFocus('gm'); gmSingleId=null; }
+  else if (s.length===8 && focus==='gm'){ gmSingleId = s; updateFocusTitle(); }
   render();
 }
 function goHigher(idOpt){
@@ -339,12 +526,12 @@ const featsOf = {
 
 function restrictByFocus(feats){
   if (focus==='bl'){ return feats.filter(f => keyBL(f.properties.id)==='09'); }
-  if (focus==='rb'){ return feats.filter(f => keyBL(f.properties.id)==='09'); }                 // alle RB
-  if (focus==='kr'){ if (!selRB) return feats.filter(f => keyBL(f.properties.id)==='09');        // Fallback
-                     return feats.filter(f => f.properties.id.startsWith(selRB)); }              // alle KR im RB
+  if (focus==='rb'){ return feats.filter(f => keyBL(f.properties.id)==='09'); }
+  if (focus==='kr'){ if (!selRB) return feats.filter(f => keyBL(f.properties.id)==='09');
+                     return feats.filter(f => f.properties.id.startsWith(selRB)); }
   if (focus==='gm'){
-    if (gmSingleId){ return feats.filter(f => f.properties.id===gmSingleId); }                  // Einzelansicht
-    if (!selKR) return [];                                                                       // GM-Liste im Kreis
+    if (gmSingleId){ return feats.filter(f => f.properties.id===gmSingleId); }
+    if (!selKR) return [];
     return feats.filter(f => f.properties.id.startsWith(selKR));
   }
   return feats;
@@ -385,6 +572,11 @@ labelToggle.addEventListener('click', ()=>{
   showLabels=!showLabels; sw.classList.toggle('on', showLabels);
   if (showLabels){ labelFeatures(lastFeats); } else { labels.clearLayers(); }
 });
+hatchLabel.addEventListener('click', ()=>{
+  hatchEnabled = !hatchEnabled;
+  swHatch.classList.toggle('on', hatchEnabled);
+  render(false);
+});
 tilesEl.addEventListener('click', (e)=>{
   const tile = e.target.closest('.tile'); if (!tile) return;
   const kind = tile.dataset.kind;
@@ -412,28 +604,28 @@ missingBtn.addEventListener('click', ()=>{
   URL.revokeObjectURL(url);
 });
 
-
-
-// Laden
+// --------- Daten laden ---------
 Promise.all([
   fetch('data/bayern_id_art.json').then(r=>r.json()),
-  fetch('data/attributes.json').then(r=>r.json())
-]).then(([topo, attrs])=>{
+  fetch('data/attributes.json').then(r=>r.json()),
+  fetch('data/gm_party_gender.json').then(r=>r.json()) // { "17111111": {"partei":"CSU","geschlecht":"m"}, ... }
+]).then(([topo, attrs, gmMeta])=>{
   for (const [id,obj] of Object.entries(attrs)) ATTR.set(id, obj);
+  for (const [id,obj] of Object.entries(gmMeta||{})) GM_META.set(id, obj);
+
   const objName = Object.keys(topo.objects)[0];
   fullGeo = topojson.feature(topo, topo.objects[objName]);
+
+  buildPartyLegend();
   setFocus('bl');
   render();
 }).catch(err=>{ console.error(err); alert('Fehler beim Laden der Daten.'); });
 
-
-
-// --- PNG-Export: kompletter Layer (auch Offscreen), MultiPolygon-fest, capped Size + skalierte Labels ---
+// --- PNG-Export (unverändert) ---
 function exportPNG(){
   try{
     if (!fullGeo){ alert('Daten noch nicht geladen.'); return; }
 
-    // 1) Bounds des aktuell GEZEICHNETEN Layers (umfasst auch Offscreen-Teile)
     let bounds = null;
     if (layer && typeof layer.getBounds === 'function' && layer.getLayers().length){
       bounds = layer.getBounds();
@@ -443,9 +635,7 @@ function exportPNG(){
       bounds = L.geoJSON(by).getBounds();
     }
 
-    // 2) Crop-Rechteck in Container-(CSS)-Pixeln + Padding (OHNE Clamping)
     const pad = 24;
-    const size = map.getSize(); // nur zur Info
     const pNW  = map.latLngToContainerPoint(bounds.getNorthWest());
     const pSE  = map.latLngToContainerPoint(bounds.getSouthEast());
 
@@ -454,44 +644,29 @@ function exportPNG(){
     const maxX = Math.max(pNW.x, pSE.x) + pad;
     const maxY = Math.max(pNW.y, pSE.y) + pad;
 
-    const cropW_css = Math.max(1, Math.round(maxX - minX)); // CSS-Pixel
+    const cropW_css = Math.max(1, Math.round(maxX - minX));
     const cropH_css = Math.max(1, Math.round(maxY - minY));
 
-    // 3) Device-Pixel + harte Obergrenze + globale Skala
     const dpr = window.devicePixelRatio || 1;
-    const MAX_DIM = 8000; // maximale Kantenlänge in Device-Pixeln (sicher für gängige Browser)
+    const MAX_DIM = 8000;
     const outW_dev = cropW_css * dpr;
     const outH_dev = cropH_css * dpr;
-    const scale    = Math.min(1, MAX_DIM / outW_dev, MAX_DIM / outH_dev); // <= 1
+    const scale    = Math.min(1, MAX_DIM / outW_dev, MAX_DIM / outH_dev);
 
     const out = document.createElement('canvas');
     out.width  = Math.max(1, Math.floor(outW_dev * scale));
     out.height = Math.max(1, Math.floor(outH_dev * scale));
     const ctx  = out.getContext('2d', { alpha:true });
 
-    // --- OPTIONAL: Weißer Hintergrund statt Transparenz ---
-    // ctx.save(); ctx.fillStyle = '#fff'; ctx.fillRect(0,0,out.width,out.height); ctx.restore();
-
-    // Hilfsfunktionen (alle Koordinaten direkt in Ziel-Device-Pixel skaliert)
     function toCanvasPoint(latlng){
-      const p = map.latLngToContainerPoint(latlng); // CSS px
-      return {
-        x: (p.x - minX) * dpr * scale,
-        y: (p.y - minY) * dpr * scale
-      };
+      const p = map.latLngToContainerPoint(latlng);
+      return { x: (p.x - minX) * dpr * scale, y: (p.y - minY) * dpr * scale };
     }
-
     function normalizeToMultiPolygon(latlngs){
-      // Ziel: Array<PolygonRings>, PolygonRings = Array<Ring>, Ring = Array<LatLng>
-      if (Array.isArray(latlngs) && Array.isArray(latlngs[0]) && Array.isArray(latlngs[0][0])) {
-        return latlngs; // MultiPolygon
-      } else if (Array.isArray(latlngs) && Array.isArray(latlngs[0])) {
-        return [ latlngs ]; // Polygon -> MultiPolygon(1)
-      } else {
-        return [ [ latlngs ] ]; // Ring -> Polygon -> MultiPolygon
-      }
+      if (Array.isArray(latlngs) && Array.isArray(latlngs[0]) && Array.isArray(latlngs[0][0])) return latlngs;
+      if (Array.isArray(latlngs) && Array.isArray(latlngs[0])) return [ latlngs ];
+      return [ [ latlngs ] ];
     }
-
     function pathFromRings(ctx, rings){
       ctx.beginPath();
       for (const ring of rings){
@@ -504,15 +679,12 @@ function exportPNG(){
       }
     }
 
-    // 4) Geometrie rendern (MultiPolygon + Löcher via evenodd)
     const defStroke = '#1f77b4', defFill = '#ffffff', defW = 1.4;
-
     const layers = layer && layer.getLayers ? layer.getLayers() : [];
     if (!layers.length){ alert('Keine sichtbaren Features im aktuellen Fokus.'); return; }
 
     for (const l of layers){
       if (typeof l.getLatLngs !== 'function') continue;
-
       const mpoly  = normalizeToMultiPolygon(l.getLatLngs());
       const opt    = l.options || {};
       const stroke = opt.color ?? defStroke;
@@ -522,46 +694,18 @@ function exportPNG(){
       const lineOp = (opt.opacity != null ? opt.opacity : 1);
 
       for (const rings of mpoly){
-        // Füllen
-        ctx.save();
-        ctx.globalAlpha = fillOp;
-        ctx.fillStyle   = fill;
-        pathFromRings(ctx, rings);
-        ctx.fill('evenodd');
-        ctx.restore();
-
-        // Umriss
-        ctx.save();
-        ctx.globalAlpha = lineOp;
-        ctx.lineWidth   = Math.max(0.5, lineW);
-        ctx.strokeStyle = stroke;
-        pathFromRings(ctx, rings);
-        ctx.stroke();
-        ctx.restore();
+        ctx.save(); ctx.globalAlpha = fillOp; ctx.fillStyle = fill; pathFromRings(ctx, rings); ctx.fill('evenodd'); ctx.restore();
+        ctx.save(); ctx.globalAlpha = lineOp; ctx.lineWidth = Math.max(0.5, lineW); ctx.strokeStyle = stroke; pathFromRings(ctx, rings); ctx.stroke(); ctx.restore();
       }
     }
 
-    // 5) Labels (Outline statt Glow, skaliert)
     function drawTextOutlined(text, x, y, px){
-      const lw = 3 * dpr * scale;
-      const half = Math.max(1, Math.round(lw/2));
-
-      ctx.save();
-      ctx.textBaseline = 'middle';
-      ctx.textAlign    = 'center';
-      ctx.font         = `600 ${px}px system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial`;
-      ctx.lineJoin     = 'round';
-      ctx.lineCap      = 'round';
-      ctx.miterLimit   = 2;
-
-      ctx.lineWidth   = lw;
-      ctx.strokeStyle = '#ffffff';
-      ctx.strokeText(text, x, y);
-      ctx.strokeText(text, x + half*0.1, y + half*0.1);
-
-      ctx.fillStyle = '#1d1d1f';
-      ctx.fillText(text, x, y);
-      ctx.restore();
+      const lw = 3 * dpr * scale; const half = Math.max(1, Math.round(lw/2));
+      ctx.save(); ctx.textBaseline='middle'; ctx.textAlign='center';
+      ctx.font=`600 ${px}px system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial`;
+      ctx.lineJoin='round'; ctx.lineCap='round'; ctx.miterLimit=2;
+      ctx.lineWidth=lw; ctx.strokeStyle='#ffffff'; ctx.strokeText(text,x,y); ctx.strokeText(text,x+half*0.1,y+half*0.1);
+      ctx.fillStyle='#1d1d1f'; ctx.fillText(text,x,y); ctx.restore();
     }
 
     if (typeof showLabels === 'undefined' || showLabels){
@@ -573,25 +717,19 @@ function exportPNG(){
           const html = m.options?.icon?.options?.html ?? '';
           txt = String(html).replace(/<[^>]*>/g,'').trim();
         }catch(_){}
-        if (!txt){
-          try{ txt = (m.getElement()?.innerText || '').trim(); }catch(_){}
+        if (!txt){ try{ txt = (m.getElement()?.innerText || '').trim(); }catch(_){}
         }
         if (!txt) return;
-
         drawTextOutlined(txt, cp.x, cp.y, 12 * dpr * scale);
       });
     }
 
-    // 6) Download
     out.toBlob(function(b){
       if (!b){ alert('PNG konnte nicht erstellt werden.'); return; }
       const dl = URL.createObjectURL(b);
       const a  = document.createElement('a');
-      a.href = dl;
-      a.download = 'bayern_drilldown.png';
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
+      a.href = dl; a.download = 'bayern_drilldown.png';
+      document.body.appendChild(a); a.click(); a.remove();
       URL.revokeObjectURL(dl);
     }, 'image/png');
 
@@ -600,13 +738,7 @@ function exportPNG(){
     alert('PNG-Export: Unerwarteter Fehler.');
   }
 }
-
-// Button koppeln (falls nicht schon geschehen)
 pngBtn.addEventListener('click', exportPNG);
-
-
-
-
 </script>
 </body>
 </html>
