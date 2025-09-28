@@ -321,33 +321,60 @@ function buildPartyLegend(){
   });
 }
 
-// SVG-Pattern (Schraffur) pro Parteifarbe
+// --- Helpers: Helligkeit bestimmen ---
+function hexToRgb(hex){
+  const m = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  if(!m) return {r:0,g:0,b:0};
+  return { r: parseInt(m[1],16), g: parseInt(m[2],16), b: parseInt(m[3],16) };
+}
+function isDark(hex){
+  const {r,g,b} = hexToRgb(hex);
+  // relative Luminanz (sRGB, grob)
+  const L = 0.2126*r + 0.7152*g + 0.0722*b;
+  return L < 140; // Schwelle empirisch
+}
+
+// --- SVG-Pattern (Schraffur) pro Parteifarbe, mit dynamischer Strichfarbe ---
 function ensureHatchPatternFor(color){
-  const id = `hatch-${color.replace('#','')}`;
+  const dark = isDark(color);
+  const stroke = dark ? '#ffffff' : '#111827';
+  const opacity = dark ? 0.55 : 0.28;
+  const width = dark ? 1.2 : 1.0;
+
+  // ID enthält auch Strichfarbe, damit Caching korrekt ist
+  const id = `hatch-${color.replace('#','')}-${stroke.replace('#','')}`;
   const svg = map.getPanes().overlayPane.querySelector('svg');
   if (!svg) return null;
+
   let defs = svg.querySelector('defs');
-  if (!defs){ defs = document.createElementNS('http://www.w3.org/2000/svg','defs'); svg.prepend(defs); }
+  if (!defs){
+    defs = document.createElementNS('http://www.w3.org/2000/svg','defs');
+    svg.prepend(defs);
+  }
   let pat = defs.querySelector(`#${id}`);
   if (pat) return id;
 
   pat = document.createElementNS('http://www.w3.org/2000/svg','pattern');
   pat.setAttribute('id', id);
   pat.setAttribute('patternUnits', 'userSpaceOnUse');
-  pat.setAttribute('width', '8'); pat.setAttribute('height', '8');
+  pat.setAttribute('width', '8');
+  pat.setAttribute('height', '8');
 
+  // Hintergrund = Parteifarbe (damit fillOpacity etc. konsistent bleibt)
   const bg = document.createElementNS('http://www.w3.org/2000/svg','rect');
   bg.setAttribute('x','0'); bg.setAttribute('y','0');
   bg.setAttribute('width','8'); bg.setAttribute('height','8');
   bg.setAttribute('fill', color);
   pat.appendChild(bg);
 
+  // diagonale Linien
   const path = document.createElementNS('http://www.w3.org/2000/svg','path');
   path.setAttribute('d', 'M-2,2 l4,-4 M0,8 l8,-8 M6,10 l4,-4');
-  path.setAttribute('stroke', '#111827');
-  path.setAttribute('stroke-width', '1');
-  path.setAttribute('opacity', '.25');
+  path.setAttribute('stroke', stroke);
+  path.setAttribute('stroke-width', String(width));
+  path.setAttribute('opacity', String(opacity));
   path.setAttribute('fill', 'none');
+  path.setAttribute('shape-rendering','geometricPrecision');
   pat.appendChild(path);
 
   defs.appendChild(pat);
